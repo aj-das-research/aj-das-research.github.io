@@ -4,145 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhijit Das - AI Research Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+        * {
             margin: 0;
             padding: 0;
-            color: #333;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #4a4a4a;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        .main-content {
-            float: left;
-            width: 70%;
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
-        .sidebar {
-            float: right;
-            width: 25%;
-            background-color: #f1e9e9;
-            padding: 15px;
-            margin-top: 10px;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+        main {
+            margin-top: 60px;
+            padding: 2rem 0;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/random/1600x900/?technology');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+        .publications, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .publication-item, .project-item {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         footer {
-            background-color: #333;
+            background-color: var(--secondary-color);
             color: #fff;
             text-align: center;
-            padding: 1rem;
-            clear: both;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            .hero {
+                height: 40vh;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Abhijit Das</h1>
-        <p>AI Research Engineer | Computer Vision Specialist</p>
+        <nav class="container">
+            <h1>Abhijit Das</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#consultancy">Consultancy</a></li>
-            <li><a href="#collaborators">Collaborators</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>AI Research Engineer</h2>
+                <p>Pushing the boundaries of AI and Computer Vision</p>
+                <a href="#contact" class="btn">Get in touch</a>
+            </div>
+        </section>
 
-    <div class="container">
-        <div class="main-content">
-            <section id="home">
-                <h2>Welcome to My Portfolio</h2>
-                <p>I'm a Founding AI Research Engineer at OnFinance AI, specializing in computer vision and machine learning.</p>
-            </section>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>I'm a Founding AI Research Engineer at OnFinance AI, specializing in computer vision and machine learning. With experience at prestigious institutions like Northwestern University and TU Darmstadt, I focus on innovative AI solutions in finance and healthcare.</p>
+        </section>
 
-            <section id="about">
-                <h2>About Me</h2>
-                <p>With experience at prestigious institutions like Northwestern University and TU Darmstadt, I focus on innovative AI solutions in finance and healthcare.</p>
-            </section>
+        <section id="research" class="container">
+            <h2>Research & Publications</h2>
+            <div class="publications">
+                <div class="publication-item">
+                    <h3>Confidence-guided Uncertainty-aware Mutual Learning</h3>
+                    <p>MICCAI, 2024</p>
+                    <a href="#" class="btn">Read Paper</a>
+                </div>
+                <div class="publication-item">
+                    <h3>SEANet: Synergistic Spatial-Spectral Residual connections</h3>
+                    <p>ICPR, 2024</p>
+                    <a href="#" class="btn">Read Paper</a>
+                </div>
+                <div class="publication-item">
+                    <h3>ProFONet: Prototypical Feature Space Optimized Network</h3>
+                    <p>ICPR, 2024</p>
+                    <a href="#" class="btn">Read Paper</a>
+                </div>
+            </div>
+        </section>
 
-            <section id="research">
-                <h2>Research & Publications</h2>
-                <ul>
-                    <li>Confidence-guided Uncertainty-aware Mutual Learning for Generalized Lesion Localization in X-ray Images (MICCAI, 2024)</li>
-                    <li>SEANet: Synergistic Spatial-Spectral Residual connections for LDCT Denoising in encoder-decoder structures (ICPR, 2024)</li>
-                    <!-- Add more publications as needed -->
-                </ul>
-            </section>
+        <section id="projects" class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects">
+                <div class="project-item">
+                    <h3>Custom OCR Engine</h3>
+                    <p>Developed using PyTesseract and OpenCV with 95% accuracy on financial documents.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Self-verified RAG</h3>
+                    <p>Engineered a custom RAG pipeline for accurate factual content generation.</p>
+                </div>
+                <div class="project-item">
+                    <h3>WealthWISE for NSE</h3>
+                    <p>End-to-end web application for financial analysis using ReactJS and Python.</p>
+                </div>
+            </div>
+        </section>
 
-            <section id="blog">
-                <h2>Latest Blog Posts</h2>
-                <article>
-                    <h3>The Future of AI in Finance</h3>
-                    <p>Coming soon...</p>
-                </article>
-            </section>
-
-            <section id="projects">
-                <h2>Featured Projects</h2>
-                <ul>
-                    <li>Custom OCR Engine Development</li>
-                    <li>Self-verified RAG for Accurate Content Generation</li>
-                    <li>WealthWISE for NSE</li>
-                </ul>
-            </section>
-
-            <section id="consultancy">
-                <h2>Consultancy Services</h2>
-                <p>Offering expert consultation in AI/ML, computer vision, and financial technology solutions. Contact for more details.</p>
-            </section>
-
-            <section id="collaborators">
-                <h2>Collaborators & Mentors</h2>
-                <ul>
-                    <li>Dr. Sudipta Roy - Assistant Professor, Jio Institute</li>
-                    <li>Dr. Pethuru Chelliah - Chief Architect, Jio Platforms Ltd.</li>
-                    <li>Dr. Debayan Ganguly - Assistant Professor, Government College of Eng. and Leather Technology</li>
-                </ul>
-            </section>
-        </div>
-
-        <div class="sidebar">
-            <h2>Contact Information</h2>
+        <section id="contact" class="container">
+            <h2>Contact Me</h2>
             <p>Email: aj.das.research@gmail.com</p>
-            <p>LinkedIn: abhijit-das-b91220233</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/abhijit-das-b91220233">abhijit-das-b91220233</a></p>
             <p>Phone: +91-8101969424</p>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Abhijit Das. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Abhijit Das. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
