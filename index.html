@@ -3,159 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhijit Das - AI Research Engineer</title>
+    <title>Abhijit Das - Research Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div class="logo">
-                <h1>Abhijit Das</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#consultancy">Consultancy</a></li>
-                <li><a href="#collaborators">Collaborators</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="theme-toggle">Toggle Theme</button>
-        </nav>
+        <div class="header-container">
+            <img src="logo.png" alt="University Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#research-output">Research Output</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#collaborators">Collaborators</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>AI Research Engineer</h2>
-                <p>Exploring innovative AI solutions across diverse domains.</p>
-                <a href="#contact" class="btn">Get in touch</a>
+        <section id="profile" class="container profile-section">
+            <img src="profile-picture.png" alt="Profile Picture" class="profile-img">
+            <div class="profile-details">
+                <h1>Prof. Abhijit Das</h1>
+                <p>Bicentennial Turing Chair in Computational Medicine</p>
+                <p>Department of Informatics, Imaging & Data Sciences</p>
+                <p><a href="mailto:aj.das.research@gmail.com">aj.das.research@gmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/abhijit-das-b91220233">LinkedIn Profile</a></p>
             </div>
         </section>
 
-        <section id="about" class="container about-section">
-            <div class="text-section">
-                <h2>About Me</h2>
-                <p>I’m Abhijit Das, a Founding AI Research Engineer at OnFinance AI. I specialize in computer vision, machine learning, and have a strong focus on developing innovative AI solutions for finance and healthcare.</p>
-                <a href="resume.pdf" class="btn">Download Resume</a>
-            </div>
-            <div class="image-section">
-                <img src="https://via.placeholder.com/400x400" alt="Abhijit Das">
-            </div>
-        </section>
-
-        <section id="research" class="container">
-            <h2>Research & Publications</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Research Image">
-                    <h3>Confidence-guided Uncertainty-aware Mutual Learning</h3>
-                    <p>MICCAI, 2024</p>
-                    <a href="paper1.pdf" class="btn">Read Paper</a>
-                    <div class="comments-section">
-                        <h4>Comments</h4>
-                        <textarea placeholder="Leave a comment"></textarea>
-                        <button class="btn">Submit</button>
-                    </div>
+        <section id="research-output" class="container research-output-section">
+            <h2>Research Output</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <span>297</span> Articles
                 </div>
-                <!-- Repeat similar cards for other publications -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Research Image">
-                    <h3>SEANet: Synergistic Spatial-Spectral Residual connections</h3>
-                    <p>ICPR, 2024</p>
-                    <a href="paper2.pdf" class="btn">Read Paper</a>
-                    <div class="comments-section">
-                        <h4>Comments</h4>
-                        <textarea placeholder="Leave a comment"></textarea>
-                        <button class="btn">Submit</button>
-                    </div>
+                <div class="stat-item">
+                    <span>225</span> Conference Contributions
+                </div>
+                <div class="stat-item">
+                    <span>29</span> Preprints
+                </div>
+                <div class="stat-item">
+                    <span>127</span> Other Publications
                 </div>
             </div>
+
+            <div class="publication-list">
+                <div class="publication-item">
+                    <h3>Shape-guided Conditional Latent Diffusion Models for Synthesizing Brain Vasculature</h3>
+                    <p>Deo, Y., Dou, H., Ravikumar, N., Frangi, A. F. & Lassila, T., 13 Aug 2023. Preprint.</p>
+                    <div class="tags">
+                        <span>Circle Of Willis</span><span>Clinical Intervention</span><span>Cerebrovascular Disease</span>
+                    </div>
+                    <div class="downloads">152 Downloads (Pure)</div>
+                </div>
+                <!-- Repeat similar blocks for other publications -->
+            </div>
         </section>
 
-        <section id="projects" class="container">
-            <h2>Featured Projects</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+        <section id="projects" class="container projects-section">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
                     <h3>Custom OCR Engine</h3>
                     <p>Developed using PyTesseract and OpenCV with 95% accuracy on financial documents.</p>
                     <a href="https://github.com/your-repo" class="btn">View Code</a>
                 </div>
-                <!-- Repeat similar cards for other projects -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
-                    <h3>WealthWISE for NSE</h3>
-                    <p>End-to-end web application for financial analysis using ReactJS and Python.</p>
-                    <a href="https://github.com/your-repo" class="btn">View Code</a>
-                </div>
+                <!-- Repeat similar blocks for other projects -->
             </div>
         </section>
 
-        <section id="blog" class="container">
-            <h2>Blog</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Blog Image">
-                    <h3>Latest Research in AI</h3>
-                    <p>Exploring the advancements in AI over the past year...</p>
-                    <a href="blog1.html" class="btn">Read More</a>
-                </div>
-                <!-- Repeat similar cards for other blog posts -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Blog Image">
-                    <h3>Understanding Generative AI</h3>
-                    <p>Diving into the world of generative models and their applications...</p>
-                    <a href="blog2.html" class="btn">Read More</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="consultancy" class="container">
-            <h2>Consultancy Services</h2>
-            <p>I offer expert consultancy in AI research, machine learning, and computer vision. Whether you need help with a specific project or ongoing support, I’m here to assist you in achieving your goals.</p>
-            <a href="#contact" class="btn">Reach Out for Consultancy</a>
-        </section>
-
-        <section id="collaborators" class="container">
+        <section id="collaborators" class="container collaborators-section">
             <h2>Collaborators & Mentors</h2>
-            <div class="grid-container">
-                <div class="card collaborator-card">
-                    <img src="https://via.placeholder.com/200x200" alt="Mentor 1">
+            <div class="collaborator-list">
+                <div class="collaborator-item">
+                    <img src="mentor1.png" alt="Collaborator 1">
                     <h3>Dr. Sudipta Roy</h3>
                     <p>Assistant Professor, Jio Institute</p>
-                    <p>Specialization: Computer Vision and AI</p>
                 </div>
-                <!-- Repeat similar cards for other collaborators and mentors -->
-                <div class="card collaborator-card">
-                    <img src="https://via.placeholder.com/200x200" alt="Mentor 2">
-                    <h3>Dr. Debesh Jha</h3>
-                    <p>Researcher, Northwestern University</p>
-                    <p>Specialization: Medical Imaging</p>
-                </div>
+                <!-- Repeat similar blocks for other collaborators -->
             </div>
         </section>
 
         <section id="contact" class="container contact-section">
-            <div class="contact-info">
-                <h2>Contact Me</h2>
-                <p>Email: <a href="mailto:aj.das.research@gmail.com">aj.das.research@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/abhijit-das-b91220233">abhijit-das-b91220233</a></p>
-                <p>Phone: +91-8101969424</p>
-            </div>
-            <div class="contact-form">
-                <form action="#">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:aj.das.research@gmail.com">aj.das.research@gmail.com</a></p>
+            <p>Phone: +91-8101969424</p>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </section>
     </main>
 
