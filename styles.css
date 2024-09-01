@@ -25,7 +25,7 @@ body {
 }
 
 .header-container .logo {
-    height: 40px;
+    height: 50px;
 }
 
 nav ul {
@@ -147,14 +147,14 @@ nav ul li a:hover {
     color: #666;
 }
 
-.collaborator-slider, .mentor-slider {
+.slider {
     display: flex;
     overflow-x: scroll;
     gap: 1rem;
     padding-bottom: 1rem;
 }
 
-.collaborator-item, .mentor-item {
+.slider-item {
     flex: 0 0 auto;
     width: 200px;
     text-align: center;
@@ -164,19 +164,19 @@ nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.collaborator-item img, .mentor-item img {
+.slider-item img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-bottom: 0.5rem;
 }
 
-.collaborator-item h3, .mentor-item h3 {
+.slider-item h3 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
-.collaborator-item p, .mentor-item p {
+.slider-item p {
     font-size: 0.9rem;
 }
 
