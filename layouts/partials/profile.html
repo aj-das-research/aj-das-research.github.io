@@ -1,0 +1,7 @@
+{{/* Adapted from Simon Gravelle's profile/About widget: data-driven name, portrait, affiliation and links. */}}
+<aside id="profile" class="profile">
+  <img class="avatar avatar-circle" src="{{ "media/abhijit-das.jpeg" | relURL }}" width="220" height="220" alt="Abhijit Das" fetchpriority="high">
+  <div class="portrait-title"><h1 id="name">{{ .name }}</h1><p>{{ .role }}<br>{{ .affiliation }}</p></div>
+  <ul class="social-links">{{ range .social }}<li><a href="{{ .url }}">{{ partial "social-icon.html" .icon }}<span>{{ .name }}</span></a></li>{{ end }}</ul>
+  <a class="button cv-link" href="{{ "media/abhijit-das-cv.pdf" | relURL }}" download>{{ partial "social-icon.html" "document" }}Download CV</a>
+</aside>

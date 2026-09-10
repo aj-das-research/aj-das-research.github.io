@@ -1,0 +1,60 @@
+{
+  "name": "Abhijit Das",
+  "role": "PhD in Machine Learning",
+  "affiliation": "MBZUAI · Abu Dhabi",
+  "headline": "Building AI that earns trust.",
+  "bio": "I am a PhD student in Machine Learning at MBZUAI and co-founder & CTO of MedOS. My research connects scientific foundation models, autonomous discovery, and trustworthy AI for personalized medicine.",
+  "email": "abhijit.das@mbzuai.ac.ae",
+  "social": [
+    {
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=L3Rf6kkAAAAJ&hl=en",
+      "icon": "scholar"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/aj-das-research",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/abhijit-das-b91220233/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/abhijit2k01",
+      "icon": "huggingface"
+    }
+  ],
+  "research": [
+    {
+      "title": "Scientific foundation models",
+      "description": "Multimodal learning and world models for science."
+    },
+    {
+      "title": "Autonomous discovery",
+      "description": "Agents that propose, test, and refine scientific hypotheses."
+    },
+    {
+      "title": "Trustworthy AI",
+      "description": "Alignment, interpretability, and uncertainty-aware learning."
+    },
+    {
+      "title": "Efficient intelligence",
+      "description": "Fast inference, distillation, and models for the edge."
+    }
+  ],
+  "projects": [
+    {
+      "title": "BibCheck for Overleaf",
+      "description": "Reference verification with source-backed corrections.",
+      "url": "https://github.com/aj-das-research/bibcheck-overleaf"
+    },
+    {
+      "title": "ProFONet",
+      "description": "Few-shot classification with optimized prototypical representations.",
+      "url": "https://github.com/aj-das-research/ProFONet"
+    }
+  ]
+}

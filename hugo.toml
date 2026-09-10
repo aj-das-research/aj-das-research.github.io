@@ -1,0 +1,10 @@
+baseURL = 'https://aj-das-research.github.io/'
+languageCode = 'en-us'
+title = 'Abhijit Das | Machine Learning Researcher'
+theme = 'starter-hugo-academic'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term', 'RSS']
+[outputs]
+  home = ['HTML']
+[params]
+  description = 'Abhijit Das, PhD student in Machine Learning at MBZUAI. Scientific foundation models, autonomous discovery, and trustworthy AI for personalized medicine.'

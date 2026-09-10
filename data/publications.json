@@ -1,0 +1,133 @@
+[
+  {
+    "title": "EnTrust: Modeling Inter-Modal Conflict for Trustworthy Multimodal Medical Image Analysis",
+    "authors": "Dwarikanath Mahapatra, Abhijit Das, Behzad Bozorgtabar, Zongyuan Ge, Sudipta Roy, Deepak Nayak, Mauricio Reyes, Imran Razzak",
+    "year": 2026,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2606.21384",
+    "summary": "EnTrust separates shared anatomy, modality-specific cues, and inter-modal conflict. A diffusion-based segmentation model uses these signals to express uncertainty where imaging modalities disagree.",
+    "id": "entrust",
+    "visualization": {
+      "label": "Modality disagreement",
+      "description": "Two modality surfaces separate around a shared structure, making disagreement visible."
+    }
+  },
+  {
+    "title": "PROTON: Prototype-Based Test-Time Online OOD Detection for Medical VLMs",
+    "authors": "Abhijit Das, Nichula Wasalathilaka, Yifan Lu, Adinath Dukre, Dwarikanath Mahapatra, Shadab Khan, Imran Razzak",
+    "year": 2026,
+    "venue": "MICCAI",
+    "url": "https://arxiv.org/abs/2606.20913",
+    "summary": "PROTON maintains an online prototype bank from high-confidence test predictions and combines prototype distance with concept-matching scores to detect distribution shifts.",
+    "id": "proton",
+    "visualization": {
+      "label": "Prototype distance",
+      "description": "A moving query is compared with clusters and their prototype centers."
+    }
+  },
+  {
+    "title": "Graph-of-Differences: Anatomy-Structured Difference Alignment for Medical Image Re-Identification",
+    "authors": "Nichula Wasalathilaka, Abhijit Das, Imran Razzak, Dwarikanath Mahapatra",
+    "year": 2026,
+    "venue": "MICCAI",
+    "url": "https://arxiv.org/abs/2606.21368",
+    "id": "graph",
+    "visualization": {
+      "label": "Anatomy correspondence",
+      "description": "Two graphs align corresponding nodes across separate observations."
+    },
+    "summary": "Graph-of-Differences represents images as graphs of named anatomical regions, matches corresponding nodes, and aligns anatomy-level differences with the global image representation."
+  },
+  {
+    "title": "Weight-Decay Turns Transformer Loss Landscapes Villani: Functional-Analytic Foundations for Optimization and Generalization",
+    "authors": "Abhijit Das, Sayantan Dutta",
+    "year": 2026,
+    "venue": "Preprint",
+    "url": "https://arxiv.org/abs/2605.06599",
+    "id": "landscape",
+    "visualization": {
+      "label": "Regularized loss geometry",
+      "description": "A particle traces a path over a curved illustrative energy surface."
+    },
+    "summary": "A functional-analytic study of Transformer objectives with weight decay, investigating coercive loss geometry, convergence of noisy optimization, and generalization bounds."
+  },
+  {
+    "title": "Ethical Framework for Responsible Foundational Models in Medical Imaging",
+    "authors": "Debesh Jha, Gorkem Durak, Abhijit Das, Jasmer Sanjotra, Onkar Susladkar, Suramyaa Sarkar, Ashish Rauniyar, et al.",
+    "year": 2025,
+    "venue": "Frontiers in Medicine",
+    "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1544501/full",
+    "id": "ethics",
+    "visualization": {
+      "label": "Responsible model lifecycle",
+      "description": "Connected checkpoints surround a central model, representing oversight throughout its lifecycle."
+    },
+    "summary": "An ethical framework for medical imaging foundation models, discussing transparency, fairness, privacy, accountability, and responsible deployment."
+  },
+  {
+    "title": "Confidence-guided Semi-supervised Learning for Generalized Lesion Localization in X-ray Images",
+    "authors": "Abhijit Das, Vandan Gorade, Komal Kumar, Snehashis Chakraborty, Dwarikanath Mahapatra, Sudipta Roy",
+    "year": 2024,
+    "venue": "MICCAI",
+    "url": "https://papers.miccai.org/miccai-2024/154-Paper3485.html",
+    "id": "lesion",
+    "visualization": {
+      "label": "Confidence-guided localization",
+      "description": "Layered image planes highlight candidate regions with different confidence cues."
+    },
+    "summary": "A semi-supervised approach to lesion localization in X-ray images, using confidence-aware pseudo-labeling to learn from labeled and unlabeled examples.",
+    "code": "https://github.com/aj-das-research/AnoMed"
+  },
+  {
+    "title": "ProFONet: Prototypical Feature Space Optimized Network for Few-shot Classification",
+    "authors": "Abhijit Das, Vandan Gorade, Debesh Jha, Koushik Biswas, Pethuru Raj, Ulas Bagci",
+    "year": 2024,
+    "venue": "ICPR",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-78183-4_25",
+    "id": "profonet",
+    "visualization": {
+      "label": "Learning the feature space",
+      "description": "Colored example clusters contract around their class prototypes."
+    },
+    "summary": "ProFONet optimizes prototypical representations for few-shot classification using variance, invariance, and covariance regularization to improve class separation."
+  },
+  {
+    "title": "SEANet: Rethinking Skip-Connections Design in Encoder-Decoder Networks via Synergistic Spatial-Spectral Fusion for LDCT Denoising",
+    "authors": "Abhijit Das, Vandan Gorade, Dwarikanath Mahapatra, Sudipta Roy",
+    "year": 2024,
+    "venue": "ICPR",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-78198-8_29",
+    "id": "seanet",
+    "visualization": {
+      "label": "Spatial–spectral fusion",
+      "description": "Two evolving signal surfaces connect across scales, suggesting complementary representations."
+    },
+    "summary": "SEANet studies skip connections that combine spatial and spectral information in encoder-decoder networks for low-dose CT denoising."
+  },
+  {
+    "title": "PAM-UNet: Shifting Attention on Region of Interest in Medical Images",
+    "authors": "Abhijit Das, Debesh Jha, Vandan Gorade, Koushik Biswas, Hongyi Pan, Zheyuan Zhang, Daniela P. Ladner, Yury Velichko, Amir Borhani, Ulas Bagci",
+    "year": 2024,
+    "venue": "IEEE EMBC",
+    "url": "https://arxiv.org/abs/2405.01503",
+    "id": "pam",
+    "visualization": {
+      "label": "Attention across scales",
+      "description": "An attention region moves through a hierarchy of feature planes."
+    },
+    "summary": "PAM-UNet uses progressive attention to focus on regions of interest in medical image segmentation."
+  },
+  {
+    "title": "Enhancing Colonoscopy Outcomes with DAPoDet-based AI for Real-time Sessile Serrated Polyp Detection",
+    "authors": "Abhijit Das, Debesh Jha, Nikhil Tomar, Neethi Dasu, Mark Geissler, Dayang Wang, Mena Bakhit, Kirti Dasu, Tyler Berzin, Ulas Bagci",
+    "year": 2024,
+    "venue": "DDW · Conference abstract",
+    "url": "https://www.giejournal.org/article/S0016-5107(24)00898-8/fulltext",
+    "id": "dapodet",
+    "visualization": {
+      "label": "Detection in motion",
+      "description": "A scanning ring moves through an abstract endoscopic tunnel and highlights a candidate region."
+    },
+    "summary": "A DDW conference abstract investigating real-time AI-assisted detection of sessile serrated polyps in colonoscopy video."
+  }
+]
