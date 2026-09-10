@@ -15,7 +15,9 @@
       "caption": "Figure 2 · EnTrust architecture",
       "alt": "Modality encoders feed shared, unique and conflict features into diffusion segmentation and uncertainty estimation.",
       "source": "https://arxiv.org/html/2606.21384v1#S2.F2"
-    }
+    },
+    "featured": true,
+    "bibtex": "@misc{entrust2026,\n  title = {{EnTrust: Modeling Inter-Modal Conflict for Trustworthy Multimodal Medical Image Analysis}},\n  author = {Dwarikanath Mahapatra and Abhijit Das and Behzad Bozorgtabar and Zongyuan Ge and Sudipta Roy and Deepak Nayak and Mauricio Reyes and Imran Razzak},\n  year = {2026},\n  howpublished = {Preprint},\n  url = {https://arxiv.org/abs/2606.21384}\n}"
   },
   {
     "title": "PROTON: Prototype-Based Test-Time Online OOD Detection for Medical VLMs",
@@ -33,7 +35,9 @@
       "caption": "Figure 2 · PROTON architecture",
       "alt": "Frozen vision-language encoders connect to an online prototype bank, a confidence gate and adaptive out-of-distribution scoring.",
       "source": "https://arxiv.org/html/2606.20913v1#S1.F2"
-    }
+    },
+    "featured": true,
+    "bibtex": "@misc{proton2026,\n  title = {{PROTON: Prototype-Based Test-Time Online OOD Detection for Medical VLMs}},\n  author = {Abhijit Das and Nichula Wasalathilaka and Yifan Lu and Adinath Dukre and Dwarikanath Mahapatra and Shadab Khan and Imran Razzak},\n  year = {2026},\n  howpublished = {MICCAI},\n  url = {https://arxiv.org/abs/2606.20913}\n}"
   },
   {
     "title": "Graph-of-Differences: Anatomy-Structured Difference Alignment for Medical Image Re-Identification",
@@ -51,7 +55,9 @@
       "caption": "Figure 2 · Graph-of-Differences",
       "alt": "Anatomical graph construction, graph encoding and soft correspondence connect image representations to difference alignment.",
       "source": "https://arxiv.org/html/2606.21368v1#S2.F2"
-    }
+    },
+    "featured": true,
+    "bibtex": "@misc{graph2026,\n  title = {{Graph-of-Differences: Anatomy-Structured Difference Alignment for Medical Image Re-Identification}},\n  author = {Nichula Wasalathilaka and Abhijit Das and Imran Razzak and Dwarikanath Mahapatra},\n  year = {2026},\n  howpublished = {MICCAI},\n  url = {https://arxiv.org/abs/2606.21368}\n}"
   },
   {
     "title": "Weight-Decay Turns Transformer Loss Landscapes Villani: Functional-Analytic Foundations for Optimization and Generalization",
@@ -69,7 +75,9 @@
       "caption": "Figure 1 · Transformer parameterization",
       "alt": "A Transformer block with residual connections and annotated attention, normalization and feed-forward parameter groups.",
       "source": "https://arxiv.org/html/2605.06599v1#S2.F1"
-    }
+    },
+    "featured": false,
+    "bibtex": "@misc{landscape2026,\n  title = {{Weight-Decay Turns Transformer Loss Landscapes Villani: Functional-Analytic Foundations for Optimization and Generalization}},\n  author = {Abhijit Das and Sayantan Dutta},\n  year = {2026},\n  howpublished = {Preprint},\n  url = {https://arxiv.org/abs/2605.06599}\n}"
   },
   {
     "title": "Ethical Framework for Responsible Foundational Models in Medical Imaging",
@@ -87,7 +95,9 @@
       "caption": "Figure 1 · Foundation-model workflow",
       "alt": "Data sources, model training, ethical considerations, downstream medical tasks and deployment in a foundation-model workflow.",
       "source": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1544501/full#F1"
-    }
+    },
+    "featured": false,
+    "bibtex": "@misc{ethics2025,\n  title = {{Ethical Framework for Responsible Foundational Models in Medical Imaging}},\n  author = {Debesh Jha and Gorkem Durak and Abhijit Das and Jasmer Sanjotra and Onkar Susladkar and Suramyaa Sarkar and Ashish Rauniyar and others},\n  year = {2025},\n  howpublished = {Frontiers in Medicine},\n  url = {https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1544501/full}\n}"
   },
   {
     "title": "Confidence-guided Semi-supervised Learning for Generalized Lesion Localization in X-ray Images",
@@ -106,7 +116,9 @@
       "caption": "Figure 2 · AnoMed architecture",
       "alt": "Teacher-student learning, the scale-invariant bottleneck and confidence-guided pseudo-label optimization in AnoMed.",
       "source": "https://papers.miccai.org/miccai-2024/paper/3485_paper.pdf#page=3"
-    }
+    },
+    "featured": false,
+    "bibtex": "@misc{lesion2024,\n  title = {{Confidence-guided Semi-supervised Learning for Generalized Lesion Localization in X-ray Images}},\n  author = {Abhijit Das and Vandan Gorade and Komal Kumar and Snehashis Chakraborty and Dwarikanath Mahapatra and Sudipta Roy},\n  year = {2024},\n  howpublished = {MICCAI},\n  url = {https://papers.miccai.org/miccai-2024/154-Paper3485.html}\n}"
   },
   {
     "title": "ProFONet: Prototypical Feature Space Optimized Network for Few-shot Classification",
@@ -125,7 +137,9 @@
       "alt": "Support and query embeddings pass through distance learning and feature optimization with variance, invariance and covariance regularization.",
       "source": "https://github.com/aj-das-research/ProFONet"
     },
-    "code": "https://github.com/aj-das-research/ProFONet"
+    "code": "https://github.com/aj-das-research/ProFONet",
+    "featured": false,
+    "bibtex": "@misc{profonet2024,\n  title = {{ProFONet: Prototypical Feature Space Optimized Network for Few-shot Classification}},\n  author = {Abhijit Das and Vandan Gorade and Debesh Jha and Koushik Biswas and Pethuru Raj and Ulas Bagci},\n  year = {2024},\n  howpublished = {ICPR},\n  url = {https://link.springer.com/chapter/10.1007/978-3-031-78183-4_25}\n}"
   },
   {
     "title": "SEANet: Rethinking Skip-Connections Design in Encoder-Decoder Networks via Synergistic Spatial-Spectral Fusion for LDCT Denoising",
@@ -144,7 +158,9 @@
       "alt": "A CT denoising encoder-decoder joins spatial and spectral residual units across skip connections.",
       "source": "https://github.com/aj-das-research/SEANet"
     },
-    "code": "https://github.com/aj-das-research/SEANet"
+    "code": "https://github.com/aj-das-research/SEANet",
+    "featured": false,
+    "bibtex": "@misc{seanet2024,\n  title = {{SEANet: Rethinking Skip-Connections Design in Encoder-Decoder Networks via Synergistic Spatial-Spectral Fusion for LDCT Denoising}},\n  author = {Abhijit Das and Vandan Gorade and Dwarikanath Mahapatra and Sudipta Roy},\n  year = {2024},\n  howpublished = {ICPR},\n  url = {https://link.springer.com/chapter/10.1007/978-3-031-78198-8_29}\n}"
   },
   {
     "title": "PAM-UNet: Shifting Attention on Region of Interest in Medical Images",
@@ -162,7 +178,9 @@
       "caption": "Figure 2 · PAM-UNet architecture",
       "alt": "PAM-UNet encoder-decoder architecture, progressive attention gate and feature maps before and after attention.",
       "source": "https://arxiv.org/html/2405.01503v1#S2.F2"
-    }
+    },
+    "featured": false,
+    "bibtex": "@misc{pam2024,\n  title = {{PAM-UNet: Shifting Attention on Region of Interest in Medical Images}},\n  author = {Abhijit Das and Debesh Jha and Vandan Gorade and Koushik Biswas and Hongyi Pan and Zheyuan Zhang and Daniela P. Ladner and Yury Velichko and Amir Borhani and Ulas Bagci},\n  year = {2024},\n  howpublished = {IEEE EMBC},\n  url = {https://arxiv.org/abs/2405.01503}\n}"
   },
   {
     "title": "Enhancing Colonoscopy Outcomes with DAPoDet-based AI for Real-time Sessile Serrated Polyp Detection",
@@ -180,6 +198,8 @@
       "caption": "DAPoDet architecture",
       "alt": "Feature aggregation, channel and spatial attention, multi-scale detection and an example detected polyp.",
       "source": "https://www.giejournal.org/article/S0016-5107(24)00898-8/fulltext"
-    }
+    },
+    "featured": false,
+    "bibtex": "@misc{dapodet2024,\n  title = {{Enhancing Colonoscopy Outcomes with DAPoDet-based AI for Real-time Sessile Serrated Polyp Detection}},\n  author = {Abhijit Das and Debesh Jha and Nikhil Tomar and Neethi Dasu and Mark Geissler and Dayang Wang and Mena Bakhit and Kirti Dasu and Tyler Berzin and Ulas Bagci},\n  year = {2024},\n  howpublished = {DDW · Conference abstract},\n  url = {https://www.giejournal.org/article/S0016-5107(24)00898-8/fulltext}\n}"
   }
 ]

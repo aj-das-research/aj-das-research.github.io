@@ -1,0 +1,12 @@
+/* Font Awesome 5.11.2 (SIL OFL / MIT) and Academicons (SIL OFL / MIT). */
+@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:900;font-display:block;src:url('../fonts/fa-solid-900.woff2') format('woff2')}
+@font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:400;font-display:block;src:url('../fonts/fa-brands-400.woff2') format('woff2')}
+@font-face{font-family:Academicons;font-style:normal;font-weight:400;font-display:block;src:url('../fonts/academicons.woff') format('woff')}
+.fas,.fab,.ai{display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;-webkit-font-smoothing:antialiased}
+.fas{font-family:'Font Awesome 5 Free';font-weight:900}.fab{font-family:'Font Awesome 5 Brands';font-weight:400}.ai{font-family:Academicons}
+.fa-sun:before{content:"\f185"}
+.fa-moon:before{content:"\f186"}
+.fa-github:before{content:"\f09b"}
+.fa-linkedin:before{content:"\f08c"}
+.fa-file-pdf:before{content:"\f1c1"}
+.ai-google-scholar:before {content: "\e9d4";}

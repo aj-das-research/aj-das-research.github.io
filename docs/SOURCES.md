@@ -54,3 +54,14 @@ Figures below come directly from the cited paper or public author repository. No
 The PROTON HTML thumbnail was too small for legible enlargement, so the complete Figure 2 diagram was rendered from PDF page 3 at 8x scale. AnoMed Figure 2 was extracted with its alpha mask from PDF page 3 at the embedded image's original resolution. Both extractions were visually checked against the page. The DAPoDet architecture is the publisher's first unnumbered figure (`fx1_lrg.jpg`); the paper is a conference abstract. ProFONet and SEANet figures come from the user's official public code repositories.
 
 `figure-sources.json` records retrieval date, source URL, original and preview dimensions, extraction coordinates where applicable, processing description, source checksum and output checksums. Other than PDF figure extraction, transformations are white-background compositing, proportional thumbnail resizing and lossless WebP encoding. No labels or scientific content are redrawn.
+
+## Terminal theme sources — 2026-09-10
+
+- Visual and interaction reference: https://mvp18.github.io/ ; source repository https://github.com/mvp18/mvp18.github.io . Captured DOM/layout evidence and screenshots: `reference/mvp18/`. The homepage attributes Jon Barron, Deepak Pathak and Saurabh Gupta; our footer credits Soumava Paul and retains the original-template link.
+- Titillium Web and JetBrains Mono: the exact Google Fonts families requested by the reference, downloaded and hosted locally. SIL Open Font License records: `licenses/titillium-OFL.txt` and `licenses/jetbrains-OFL.txt`.
+- Font Awesome 5.11.2: original solid/brand icon fonts from cdnjs; `licenses/fontawesome-LICENSE.txt`.
+- Academicons: source Google Scholar glyph and WOFF font from the jpswalsh/academicons repository. Font SIL OFL 1.1 and CSS MIT licenses documented in `licenses/academicons-README.md`.
+- Hugging Face: official Simple Icons v15 SVG from https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/huggingface.svg (CC0).
+- Email animation reference: https://mvp18.github.io/js/scramble.js , Jeff Donahue (2011). Its source explicitly permits reuse. Reimplemented sorting with scoped variables, safe DOM writes and reduced-motion support.
+
+Additional biography text only expands the existing public research themes and names the already verified papers/projects. June and May 2026 news dates refer to the arXiv releases cited above; no acceptance announcement date is inferred. Figures remain byte-for-byte the assets recorded in `figure-sources.json`.

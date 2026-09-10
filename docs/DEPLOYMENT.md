@@ -21,3 +21,7 @@ The full browser interaction suite was rerun against https://aj-das-research.git
 ## Original figure revision
 
 The current revision replaces all ten synthetic publication illustrations with original paper or author-repository diagrams, links their sources and supplies full-resolution images. The existing GitHub Actions workflow publishes the revision on push to `main`, including figure checksum verification during the build. The hero tesseract remains active. Local browser and production-build evidence is recorded in `QA.md`.
+
+## Terminal theme revision
+
+The user requested an exact visual theme match to mvp18.github.io after the original-figure revision. The new presentation uses the same GitHub Pages workflow and retains the public identity and figure assets. Dark/light mode, email reveal, citation disclosures, source links, mobile layout and the side-project tesseract are verified before push. `design-qa.md` records source comparison and intentional content differences.

@@ -56,5 +56,33 @@
       "description": "Few-shot classification with optimized prototypical representations.",
       "url": "https://github.com/aj-das-research/ProFONet"
     }
-  ]
+  ],
+  "about_paragraphs": [
+    "I am a PhD student in Machine Learning at [MBZUAI](https://mbzuai.ac.ae/) in Abu Dhabi and co-founder & CTO of MedOS. My research connects scientific foundation models, autonomous discovery, and trustworthy AI for personalized medicine.",
+    "I work on multimodal learning and world models for science, with an interest in agents that propose, test, and refine scientific hypotheses. I study alignment, interpretability, and uncertainty-aware learning, as well as efficient inference and model distillation.",
+    "My recent work explores [multimodal medical image analysis](#paper-entrust), [out-of-distribution detection](#paper-proton), [anatomy-structured representations](#paper-graph), and [optimization and generalization](#paper-landscape). I also build open-source tools, including [BibCheck for Overleaf](https://github.com/aj-das-research/bibcheck-overleaf)."
+  ],
+  "news": [
+    {
+      "date": "Jun 2026",
+      "text": "New preprint: [EnTrust](#paper-entrust) models inter-modal conflict for trustworthy medical imaging."
+    },
+    {
+      "date": "Jun 2026",
+      "text": "[PROTON](#paper-proton) and [Graph-of-Differences](#paper-graph) — MICCAI 2026."
+    },
+    {
+      "date": "May 2026",
+      "text": "New preprint on [Transformer loss landscapes and weight decay](#paper-landscape)."
+    },
+    {
+      "date": "2025",
+      "text": "[Responsible foundation models in medical imaging](#paper-ethics) — Frontiers in Medicine."
+    },
+    {
+      "date": "2024",
+      "text": "[AnoMed](#paper-lesion) — MICCAI; [ProFONet](#paper-profonet) and [SEANet](#paper-seanet) — ICPR."
+    }
+  ],
+  "research_intro": "I am interested in scientific foundation models, trustworthy medical AI, autonomous discovery, and efficient intelligence. My work spans multimodal learning, uncertainty estimation, medical image analysis, and the foundations of optimization."
 }

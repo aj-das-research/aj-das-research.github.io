@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark-mode">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Site.Title }}</title>
   <meta name="description" content="{{ .Site.Params.description }}">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#121212">
   <link rel="canonical" href="{{ .Permalink }}">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="{{ .Site.Title }}">
@@ -13,75 +13,63 @@
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content="{{ "media/abhijit-das.jpeg" | absURL }}">
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  <script src="{{ "js/theme-init.js" | relURL }}"></script>
+  <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/icons.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+  <script src="{{ "js/site.js" | relURL }}" defer></script>
   <script type="module" src="{{ "js/tesseract.js" | relURL }}"></script>
 </head>
 <body>
   {{ $profile := .Site.Data.profile }}
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header container">
-    <a class="wordmark" href="#about" aria-label="Abhijit Das, home">AD<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#contact">Contact</a>
-    </nav>
+  <header class="header-actions">
+    <a class="header-link" href="{{ "media/abhijit-das-cv.pdf" | relURL }}">CV</a>
+    <button id="theme-toggle-button" class="theme-toggle-button" type="button" aria-pressed="true" aria-label="Switch to light mode" hidden><i class="fas fa-sun" aria-hidden="true"></i></button>
   </header>
-  <main id="main">
-    <section id="about" class="about container section-grid" aria-labelledby="name">
-      {{ partial "profile.html" $profile }}
+  <main id="main" class="page">
+    <header class="identity">
+      <h1 id="name">{{ $profile.name }}</h1>
+      <div class="term-line"><span class="term-prompt" aria-hidden="true">$</span> echo $EMAIL</div>
+      <div class="email-line"><a id="email" href="mailto:{{ $profile.email }}">{{ $profile.email }}</a><button id="unscramble-email" class="text-button" hidden>unscramble</button></div>
+    </header>
+    <section id="about" class="about" aria-labelledby="about-title">
       <div class="biography">
-        <h2 class="headline">{{ strings.TrimSuffix "." $profile.headline }}<span>.</span></h2>
-        <p class="intro">{{ $profile.bio }}</p>
-        <div class="perspective">
-          <div class="geometry-frame">
-            <svg id="tesseract" viewBox="0 0 360 300" role="img" aria-labelledby="geometry-title geometry-desc">
-              <title id="geometry-title">Rotating tesseract</title>
-              <desc id="geometry-desc">Sixteen vertices and thirty-two edges of a four-dimensional cube, projected through three dimensions onto the screen.</desc>
-              <!-- Static fallback remains visible when JavaScript is unavailable. -->
-              <g fill="none" stroke="currentColor" stroke-width="1.3">
-                <path d="M70 75 210 40 290 85 150 125Z M70 75V220L150 265 290 225V85 M150 125V265 M70 220 210 180 290 225 M210 40V180"/>
-                <path d="M115 105 195 85 245 112 165 135Z M115 105V190L165 220 245 197V112 M165 135V220 M115 190 195 167 245 197 M195 85V167"/>
-                <path opacity=".5" d="M70 75 115 105 M210 40 195 85 M290 85 245 112 M150 125 165 135 M70 220 115 190 M210 180 195 167 M290 225 245 197 M150 265 165 220"/>
-              </g>
-            </svg>
-          </div>
-          <div class="perspective-copy">
-            <h3>A different perspective.</h3>
-            <p>Explore a rotating four-dimensional cube, projected into three dimensions.</p>
-            <div class="motion-controls" hidden>
-              <button type="button" id="toggle-motion" aria-pressed="false">Pause motion</button>
-              <button type="button" id="reset-view">Reset view</button>
-            </div>
-          </div>
-        </div>
+        <h2 id="about-title" class="terminal-heading">cat about.txt</h2>
+        {{ range $profile.about_paragraphs }}<p>{{ . | markdownify }}</p>{{ end }}
+        <nav class="social-links" aria-label="Social profiles">
+          {{ range $profile.social }}<a href="{{ .url }}" aria-label="{{ .name }}" title="{{ .name }}">{{ if eq .icon "github" }}<i class="fab fa-github" aria-hidden="true"></i>{{ else if eq .icon "scholar" }}<i class="ai ai-google-scholar" aria-hidden="true"></i>{{ else if eq .icon "linkedin" }}<i class="fab fa-linkedin" aria-hidden="true"></i>{{ else }}<img class="brand-icon" src="{{ "media/icons/huggingface.svg" | relURL }}" alt="" width="21" height="21">{{ end }}</a>{{ end }}
+          <a href="{{ "media/abhijit-das-cv.pdf" | relURL }}" aria-label="Download CV" title="Download CV"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
+        </nav>
+      </div>
+      <div class="portrait"><a href="{{ "media/abhijit-das.jpeg" | relURL }}"><img src="{{ "media/abhijit-das.jpeg" | relURL }}" alt="Abhijit Das" width="288" height="288" fetchpriority="high"></a></div>
+    </section>
+    <section id="news" class="text-section" aria-labelledby="news-title">
+      <h2 id="news-title" class="terminal-heading">tail -f news.log</h2>
+      <div class="scrollable-list" tabindex="0" role="region" aria-label="Publication updates">
+        <ul>{{ range $profile.news }}<li><strong>[{{ .date }}]</strong><span>{{ .text | markdownify }}</span></li>{{ end }}</ul>
       </div>
     </section>
-    <section id="research" class="research section-band" aria-labelledby="research-title">
-      <div class="container section-grid">
-        <h2 id="research-title" class="section-title">Research</h2>
-        <div class="research-list">
-          {{ range $profile.research }}<article><h3>{{ .title }}</h3><p>{{ .description }}</p></article>{{ end }}
-        </div>
+    <section id="research" aria-labelledby="research-title">
+      <div class="text-section">
+        <h2 id="research-title" class="terminal-heading">ls research/</h2>
+        <p>{{ $profile.research_intro }} Recent papers are <span class="highlight">highlighted</span>.</p>
       </div>
-    </section>
-    <section id="publications" class="publications container" aria-labelledby="publications-title">
-      <div class="publications-heading">
-        <div><h2 id="publications-title" class="section-title">Publications</h2><p>Explore the methods behind the research.</p></div>
-        <div class="publication-guide"><p>Original paper figures · Click to enlarge</p><a href="{{ (index $profile.social 0).url }}">All publications on Scholar {{ partial "arrow.html" }}</a></div>
-      </div>
-      <div class="publication-list">
+      <div id="publications" class="publication-list" aria-label="Publications">
         {{ range .Site.Data.publications }}{{ partial "publication.html" . }}{{ end }}
       </div>
     </section>
-    <section id="open-source" class="open-source container section-grid" aria-labelledby="open-source-title">
-      <h2 id="open-source-title" class="section-title">Open source</h2>
-      <div class="project-list">{{ range $profile.projects }}
-        <a class="project" href="{{ .url }}"><div><h3>{{ .title }}</h3><p>{{ .description }}</p></div>{{ partial "arrow.html" }}</a>
-      {{ end }}</div>
+    <section id="open-source" aria-labelledby="projects-title">
+      <div class="text-section"><h2 id="projects-title" class="terminal-heading">ls side_quests/</h2></div>
+      <article class="side-project">
+        <div class="geometry-frame">{{ partial "tesseract.html" }}</div>
+        <div><h3>A different perspective</h3><p>A rotating four-dimensional cube, projected into three dimensions. An interactive experiment in geometry.</p><div class="motion-controls" hidden><button type="button" id="toggle-motion" aria-pressed="false">Pause motion</button><span aria-hidden="true"> / </span><button type="button" id="reset-view">Reset view</button></div></div>
+      </article>
+      <div class="text-section"><ul class="project-list">{{ range $profile.projects }}<li><a href="{{ .url }}">{{ .title }}</a> — {{ .description }}</li>{{ end }}</ul></div>
     </section>
-    <section id="contact" class="contact section-band" aria-labelledby="contact-title">
-      <div class="container section-grid"><h2 id="contact-title" class="section-title">Let’s talk research.</h2><div><p>For research collaborations and opportunities.</p><a href="mailto:{{ $profile.email }}">{{ $profile.email }}</a></div></div>
-    </section>
+    <section id="contact" class="text-section" aria-labelledby="contact-title"><h2 id="contact-title" class="terminal-heading">cat contact.txt</h2><p>For research collaborations and opportunities: <a href="mailto:{{ $profile.email }}">{{ $profile.email }}</a>.</p></section>
+    <div class="term-cursor-line" aria-hidden="true"><span class="term-prompt">$</span> <span class="term-cursor"></span></div>
+    <footer class="site-footer"><a href="https://mvp18.github.io/">Theme reference: Soumava Paul</a> · <a href="https://github.com/simongravelle/simongravelle.github.io">Original template</a> · <a href="https://github.com/aj-das-research/aj-das-research.github.io">Source</a></footer>
   </main>
-  <footer class="container site-footer"><p>© {{ now.Year }} {{ $profile.name }}</p><p>Built with Hugo · Template by <a href="https://github.com/simongravelle/simongravelle.github.io">Simon Gravelle</a> · <a href="https://github.com/aj-das-research/aj-das-research.github.io">Source</a></p></footer>
 </body>
 </html>

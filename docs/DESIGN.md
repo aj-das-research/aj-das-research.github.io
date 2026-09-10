@@ -38,10 +38,22 @@ Distinct concepts: inter-modal surfaces; online prototype distances; anatomical 
 
 Intentional differences from the raster reference: retain complete verified author lists where available rather than shortened reference bylines; retain real paper/code links and the Scholar link; use deterministic scientific forms whose perspective changes interactively. Canvas color is #edf3f7; no raster texture is needed. Controls and paper text remain native HTML.
 
-## Original paper figures (current design, 2026-09-10)
+## Original paper figure revision (2026-09-10)
 
 The user corrected the publication direction: use the actual main architecture or teaser figures from the papers instead of synthetic animated illustrations. This revision supersedes the ten-scene concept. It is a targeted change to the existing design; no generated replacement figures are used.
 
 All ten publication rows now show original diagrams, with a 43% figure column, complete citations, a source-linked caption and a full-size image link. Mobile stacks figure above citation. White figure backgrounds, proportional sizing and `object-fit: contain` preserve all panels and labels; no fixed crop is imposed. Large original files are paired with smaller, lazy-loaded, lossless WebP thumbnails. Both figure links work without JavaScript. The hero tesseract remains interactive and follows reduced-motion preferences.
 
 Paper canvas scripts, procedural scene geometry, generated SVG fallbacks and their obsolete tests are removed. Previous generated references and QA screenshots remain historical records, not active design specifications. See `figure-sources.json` for precise provenance and PDF extraction details.
+
+## Current theme: mvp18.github.io (2026-09-10)
+
+The user explicitly requested this exact theme. The active visual target is now https://mvp18.github.io/, captured on desktop (1272 × 868 CSS pixels) and mobile (390 × 844) before implementation. The earlier Simon-style layout and generated concepts are historical. This revision keeps the existing Hugo runtime, data records and publication assets; it replaces the homepage presentation.
+
+Measured source details: 900px centered surface; outer #121212 and inner #1f1f1f in dark mode; Titillium Web 14px/1.6 body, 36px regular name, JetBrains Mono 15px/1.6 bold terminal headings; 63%/37% biography/portrait split with 22.5px padding; 27.2%/72.8% publication columns with 20px padding; 32px circular theme button; 120px scrollable news region. Light/dark link, prompt and venue colors use the source values. The opaque dark paper highlight #253a27 matches the source's two composited translucent layers.
+
+The fonts and icon fonts are hosted locally. Social glyphs use the source Font Awesome / Academicons families; the user's Hugging Face account uses the official Simple Icons mark. No external analytics, visitor counter, or reference-owner identity is included. Theme defaults to dark and persists the selected mode. Email sorting is based on Jeff Donahue's public scramble.js concept, rewritten with character/index pairs and safe DOM updates. Abstract and BibTeX buttons are keyboard-accessible and preserve the reference's visibility behavior.
+
+Intentional content differences: Abhijit's verified biography, original portrait, ten paper diagrams, social profiles and CV replace the reference owner's material. The header's Blog link becomes CV because this homepage has no blog route. News entries are publication updates based on already verified preprint dates/venues, not invented personal milestones. First three papers are highlighted as recent work. Bibliography snippets contain only existing metadata, formatted as generic BibTeX misc records rather than invented proceedings details. The tesseract moves to side projects. Unverified teaching/service/personal-hobby sections are omitted.
+
+The reference's mobile table layout visibly overflows; the implementation preserves its 16px mobile typography and stacked structure while fitting the viewport. Figure aspect ratios and original scientific labels are preserved, with source and full-size links. A shorter biography naturally changes vertical section positions. These are content and responsive corrections, not alternate theme styling.

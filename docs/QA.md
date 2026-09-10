@@ -40,7 +40,7 @@ Visual comparison against `design/publications-3d.png` covers open row layout, h
 
 Live deployment verification: the complete ten-scene browser suite passed against https://aj-das-research.github.io/ after GitHub Actions run 34479456719 succeeded. The homepage and all main assets returned HTTP 200; the CV response was validated as PDF. Final screenshot artifacts match the deployed site.
 
-## Original publication figures — current revision, 2026-09-10
+## Original publication figures — 2026-09-10
 
 The ten publication animations have been replaced with original paper or author-repository figures following the user's correction. Every source diagram was inspected visually. EnTrust, PROTON, Graph-of-Differences, the Transformer parameterization, the ethical workflow, AnoMed, ProFONet, SEANet, PAM-UNet and DAPoDet all have complete figures with original labels. PROTON and AnoMed were checked against PDF page 3. Source files, extraction details and hashes are recorded in `figure-sources.json`.
 
@@ -49,3 +49,9 @@ Validation passed: Hugo Extended 0.140.2 production build; both tesseract geomet
 Headless Chromium verified all ten thumbnails decode, intrinsic dimensions match their declared sizes, proportional containment is applied, and each full-size link opens a decoded high-resolution image in a new tab. Every caption has a source link. All ten figures and native disclosures remain usable with JavaScript disabled. Hero pause/play/reset and reduced-motion initialization still work. No browser page errors and no horizontal overflow at 320, 390, 768, 1024 or 1505px.
 
 Final desktop, mobile, middle and lower publication renders are `qa/publications-figures.png`, `qa/publications-figures-mobile.png`, `qa/publications-figures-middle.png`, and `qa/publications-figures-lower.png`. These were inspected for intact figure panels, readable citations, consistent spacing and responsive stacking. The original DAPoDet publisher asset has a dark background and low-contrast labels; it is reproduced faithfully, with a full-size link available.
+
+## Terminal theme — current revision, 2026-09-10
+
+The presentation now follows the user's requested https://mvp18.github.io/ theme. The final source/implementation visual comparison, resolved fidelity differences, deliberate content differences and screenshots are recorded in [design-qa.md](../design-qa.md). All ten original publication figures and their source records are retained.
+
+Hugo production build, two Node geometry tests, static identity/link/anchor validation and all twenty figure checksums passed. Browser checks passed for dark/light persistence, animated email reveal, reduced motion, all ten decoded thumbnails and full-size links, twenty disclosure buttons, JavaScript-free content, and tesseract controls. No browser errors or horizontal overflow at 320, 390, 768, 900, 1024 or 1272px.

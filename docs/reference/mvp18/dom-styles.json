@@ -1,0 +1,907 @@
+{
+  "width": 1272,
+  "height": 868,
+  "documentHeight": 4038,
+  "elements": [
+    {
+      "tag": "DIV",
+      "text": "\n    Blog\n    \n  ",
+      "bounds": {
+        "x": 166,
+        "y": 16,
+        "width": 940,
+        "height": 32,
+        "top": 16,
+        "right": 1106,
+        "bottom": 48,
+        "left": 166
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px 20px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "TABLE",
+      "text": "\n    \n\n      \n          Soumava Paul\n          $ echo $EMAIL\n          m2igvam@c",
+      "bounds": {
+        "x": 186,
+        "y": 48,
+        "width": 900,
+        "height": 3989.953125,
+        "top": 48,
+        "right": 1086,
+        "bottom": 4037.953125,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgb(31, 31, 31)"
+      }
+    },
+    {
+      "tag": "PAGEHEADING",
+      "text": "Soumava Paul",
+      "bounds": {
+        "x": 186,
+        "y": 62,
+        "width": 900,
+        "height": 57.59375,
+        "top": 62,
+        "right": 1086,
+        "bottom": 119.59375,
+        "left": 186
+      },
+      "style": {
+        "font": "36px / 57.6px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "FONT",
+      "text": "m2igvam@couo106lama.s unscramble",
+      "bounds": {
+        "x": 501.59375,
+        "y": 182.375,
+        "width": 268.8125,
+        "height": 18,
+        "top": 182.375,
+        "right": 770.40625,
+        "bottom": 200.375,
+        "left": 501.59375
+      },
+      "style": {
+        "font": "14px / 22.4px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n          cat about.txt\n          I am a first-year Ph.D. student in the\n      ",
+      "bounds": {
+        "x": 186,
+        "y": 216.765625,
+        "width": 567,
+        "height": 521.140625,
+        "top": 216.765625,
+        "right": 753,
+        "bottom": 737.90625,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "22.5px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SECTIONHEADING",
+      "text": "cat about.txt",
+      "bounds": {
+        "x": 208.5,
+        "y": 239.265625,
+        "width": 522,
+        "height": 24,
+        "top": 239.265625,
+        "right": 730.5,
+        "bottom": 263.265625,
+        "left": 208.5
+      },
+      "style": {
+        "font": "700 15px / 24px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n          \n        ",
+      "bounds": {
+        "x": 753,
+        "y": 216.765625,
+        "width": 333,
+        "height": 521.140625,
+        "top": 216.765625,
+        "right": 1086,
+        "bottom": 737.90625,
+        "left": 753
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "22.5px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n                    tail -f news.log\n                    \n                     ",
+      "bounds": {
+        "x": 186,
+        "y": 737.90625,
+        "width": 900,
+        "height": 176,
+        "top": 737.90625,
+        "right": 1086,
+        "bottom": 913.90625,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "10px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SECTIONHEADING",
+      "text": "tail -f news.log",
+      "bounds": {
+        "x": 196,
+        "y": 747.90625,
+        "width": 880,
+        "height": 24,
+        "top": 747.90625,
+        "right": 1076,
+        "bottom": 771.90625,
+        "left": 196
+      },
+      "style": {
+        "font": "700 15px / 24px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n            ls research/\n            \n              I am interested in computer",
+      "bounds": {
+        "x": 186,
+        "y": 913.90625,
+        "width": 900,
+        "height": 139.171875,
+        "top": 913.90625,
+        "right": 1086,
+        "bottom": 1053.078125,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "10px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "HEADING",
+      "text": "ls research/",
+      "bounds": {
+        "x": 196,
+        "y": 923.90625,
+        "width": 880,
+        "height": 24,
+        "top": 923.90625,
+        "right": 1076,
+        "bottom": 947.90625,
+        "left": 196
+      },
+      "style": {
+        "font": "700 15px / 24px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n\t            \n\t              \n\t              \n\t                \n\t              ",
+      "bounds": {
+        "x": 186,
+        "y": 1075.46875,
+        "width": 244.5625,
+        "height": 203.140625,
+        "top": 1075.46875,
+        "right": 430.5625,
+        "bottom": 1278.609375,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "20px",
+        "background": "rgba(63, 185, 80, 0.09)"
+      }
+    },
+    {
+      "tag": "PAPERTITLE",
+      "text": "Can These Views Be One Scene? Evaluating Multiview 3D Consistency when 3D Founda",
+      "bounds": {
+        "x": 450.5625,
+        "y": 1097.46875,
+        "width": 594.8125,
+        "height": 39.390625,
+        "top": 1097.46875,
+        "right": 1045.375,
+        "bottom": 1136.859375,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "600 14px / 22.4px Lato, Verdana, Helvetica, sans-serif",
+        "color": "rgb(167, 197, 255)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "text": "arXiv 2026",
+      "bounds": {
+        "x": 450.5625,
+        "y": 1164.640625,
+        "width": 88,
+        "height": 21.1875,
+        "top": 1164.640625,
+        "right": 538.5625,
+        "bottom": 1185.828125,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "700 12px / 19.2px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(63, 185, 80)",
+        "padding": "1px 8px",
+        "background": "rgba(63, 185, 80, 0.18)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n\t            \n              \n                Cockpit\n                Fuselage\n ",
+      "bounds": {
+        "x": 186,
+        "y": 1278.609375,
+        "width": 244.5625,
+        "height": 203.140625,
+        "top": 1278.609375,
+        "right": 430.5625,
+        "bottom": 1481.75,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "20px",
+        "background": "rgba(63, 185, 80, 0.09)"
+      }
+    },
+    {
+      "tag": "PAPERTITLE",
+      "text": "Name That Part: 3D Part Segmentation and Naming",
+      "bounds": {
+        "x": 450.5625,
+        "y": 1300.609375,
+        "width": 406.4375,
+        "height": 17,
+        "top": 1300.609375,
+        "right": 857,
+        "bottom": 1317.609375,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "600 14px / 22.4px Lato, Verdana, Helvetica, sans-serif",
+        "color": "rgb(167, 197, 255)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "text": "CVPR 2026 Findings",
+      "bounds": {
+        "x": 450.5625,
+        "y": 1345.390625,
+        "width": 145.609375,
+        "height": 21.1875,
+        "top": 1345.390625,
+        "right": 596.171875,
+        "bottom": 1366.578125,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "700 12px / 19.2px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(63, 185, 80)",
+        "padding": "1px 8px",
+        "background": "rgba(63, 185, 80, 0.18)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n            \n          ",
+      "bounds": {
+        "x": 186,
+        "y": 1481.75,
+        "width": 244.5625,
+        "height": 203.140625,
+        "top": 1481.75,
+        "right": 430.5625,
+        "bottom": 1684.890625,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "20px",
+        "background": "rgba(63, 185, 80, 0.09)"
+      }
+    },
+    {
+      "tag": "PAPERTITLE",
+      "text": "Gaussian Scenes: Pose-Free Sparse-View Scene Reconstruction using Depth-Enhanced",
+      "bounds": {
+        "x": 450.5625,
+        "y": 1503.75,
+        "width": 605.328125,
+        "height": 39.390625,
+        "top": 1503.75,
+        "right": 1055.890625,
+        "bottom": 1543.140625,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "600 14px / 22.4px Lato, Verdana, Helvetica, sans-serif",
+        "color": "rgb(167, 197, 255)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "text": "TMLR 2025",
+      "bounds": {
+        "x": 450.5625,
+        "y": 1570.921875,
+        "width": 80.8125,
+        "height": 21.1875,
+        "top": 1570.921875,
+        "right": 531.375,
+        "bottom": 1592.109375,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "700 12px / 19.2px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(63, 185, 80)",
+        "padding": "1px 8px",
+        "background": "rgba(63, 185, 80, 0.18)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n            \n              \n              \n              Your browser does not ",
+      "bounds": {
+        "x": 186,
+        "y": 1684.890625,
+        "width": 244.5625,
+        "height": 251.578125,
+        "top": 1684.890625,
+        "right": 430.5625,
+        "bottom": 1936.46875,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "20px",
+        "background": "rgba(63, 185, 80, 0.09)"
+      }
+    },
+    {
+      "tag": "PAPERTITLE",
+      "text": "Sp2360: Sparse-view 360° Scene Reconstruction using Cascaded 2D Diffusion Priors",
+      "bounds": {
+        "x": 450.5625,
+        "y": 1710.546875,
+        "width": 612.125,
+        "height": 39.390625,
+        "top": 1710.546875,
+        "right": 1062.6875,
+        "bottom": 1749.9375,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "600 14px / 22.4px Lato, Verdana, Helvetica, sans-serif",
+        "color": "rgb(167, 197, 255)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "text": "ECCV Wild3D 2024",
+      "bounds": {
+        "x": 450.5625,
+        "y": 1777.71875,
+        "width": 131.203125,
+        "height": 21.1875,
+        "top": 1777.71875,
+        "right": 581.765625,
+        "bottom": 1798.90625,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "700 12px / 19.2px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(63, 185, 80)",
+        "padding": "1px 8px",
+        "background": "rgba(63, 185, 80, 0.18)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n            \n          ",
+      "bounds": {
+        "x": 186,
+        "y": 1936.46875,
+        "width": 244.5625,
+        "height": 225.53125,
+        "top": 1936.46875,
+        "right": 430.5625,
+        "bottom": 2162,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "20px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "PAPERTITLE",
+      "text": "Universal Cross-Domain Retrieval: Generalizing Across Classes and Domains",
+      "bounds": {
+        "x": 450.5625,
+        "y": 1958.46875,
+        "width": 601.203125,
+        "height": 17,
+        "top": 1958.46875,
+        "right": 1051.765625,
+        "bottom": 1975.46875,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "600 14px / 22.4px Lato, Verdana, Helvetica, sans-serif",
+        "color": "rgb(167, 197, 255)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "text": "ICCV 2021",
+      "bounds": {
+        "x": 450.5625,
+        "y": 2003.25,
+        "width": 80.8125,
+        "height": 21.1875,
+        "top": 2003.25,
+        "right": 531.375,
+        "bottom": 2024.4375,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "700 12px / 19.2px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(63, 185, 80)",
+        "padding": "1px 8px",
+        "background": "rgba(63, 185, 80, 0.18)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n            \n          ",
+      "bounds": {
+        "x": 186,
+        "y": 2162,
+        "width": 244.5625,
+        "height": 203.140625,
+        "top": 2162,
+        "right": 430.5625,
+        "bottom": 2365.140625,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "20px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "PAPERTITLE",
+      "text": "Knowledge Distillation for Singing Voice Detection",
+      "bounds": {
+        "x": 450.5625,
+        "y": 2184,
+        "width": 396.25,
+        "height": 17,
+        "top": 2184,
+        "right": 846.8125,
+        "bottom": 2201,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "600 14px / 22.4px Lato, Verdana, Helvetica, sans-serif",
+        "color": "rgb(167, 197, 255)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "text": "INTERSPEECH 2021",
+      "bounds": {
+        "x": 450.5625,
+        "y": 2228.78125,
+        "width": 131.203125,
+        "height": 21.1875,
+        "top": 2228.78125,
+        "right": 581.765625,
+        "bottom": 2249.96875,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "700 12px / 19.2px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(63, 185, 80)",
+        "padding": "1px 8px",
+        "background": "rgba(63, 185, 80, 0.18)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n            \n          ",
+      "bounds": {
+        "x": 186,
+        "y": 2365.140625,
+        "width": 244.5625,
+        "height": 247.921875,
+        "top": 2365.140625,
+        "right": 430.5625,
+        "bottom": 2613.0625,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "20px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "PAPERTITLE",
+      "text": "Addressing Target Shift in Zero-shot Learning using Grouped Adversarial Learning",
+      "bounds": {
+        "x": 450.5625,
+        "y": 2387.140625,
+        "width": 573.96875,
+        "height": 39.390625,
+        "top": 2387.140625,
+        "right": 1024.53125,
+        "bottom": 2426.53125,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "600 14px / 22.4px Lato, Verdana, Helvetica, sans-serif",
+        "color": "rgb(167, 197, 255)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "text": "ICCV 2021 MELEX Workshop",
+      "bounds": {
+        "x": 450.5625,
+        "y": 2476.703125,
+        "width": 188.8125,
+        "height": 21.1875,
+        "top": 2476.703125,
+        "right": 639.375,
+        "bottom": 2497.890625,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "700 12px / 19.2px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(63, 185, 80)",
+        "padding": "1px 8px",
+        "background": "rgba(63, 185, 80, 0.18)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n            \n          ",
+      "bounds": {
+        "x": 186,
+        "y": 2613.0625,
+        "width": 244.5625,
+        "height": 247.921875,
+        "top": 2613.0625,
+        "right": 430.5625,
+        "bottom": 2860.984375,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "20px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "PAPERTITLE",
+      "text": "Jointly Learning Convolutional Representations to Compress Radiological Images a",
+      "bounds": {
+        "x": 450.5625,
+        "y": 2635.0625,
+        "width": 575.9375,
+        "height": 39.390625,
+        "top": 2635.0625,
+        "right": 1026.5,
+        "bottom": 2674.453125,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "600 14px / 22.4px Lato, Verdana, Helvetica, sans-serif",
+        "color": "rgb(167, 197, 255)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "text": "ICVGIP 2018",
+      "bounds": {
+        "x": 450.5625,
+        "y": 2724.625,
+        "width": 95.203125,
+        "height": 21.1875,
+        "top": 2724.625,
+        "right": 545.765625,
+        "bottom": 2745.8125,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "700 12px / 19.2px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(63, 185, 80)",
+        "padding": "1px 8px",
+        "background": "rgba(63, 185, 80, 0.18)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n          ls side_quests/\n        ",
+      "bounds": {
+        "x": 186,
+        "y": 2860.984375,
+        "width": 900,
+        "height": 56,
+        "top": 2860.984375,
+        "right": 1086,
+        "bottom": 2916.984375,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "10px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "HEADING",
+      "text": "ls side_quests/",
+      "bounds": {
+        "x": 196,
+        "y": 2870.984375,
+        "width": 880,
+        "height": 24,
+        "top": 2870.984375,
+        "right": 1076,
+        "bottom": 2894.984375,
+        "left": 196
+      },
+      "style": {
+        "font": "700 15px / 24px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n            \n          ",
+      "bounds": {
+        "x": 186,
+        "y": 2916.984375,
+        "width": 244.5625,
+        "height": 179.953125,
+        "top": 2916.984375,
+        "right": 430.5625,
+        "bottom": 3096.9375,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "20px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "PAPERTITLE",
+      "text": "Four Musings and a Mural",
+      "bounds": {
+        "x": 450.5625,
+        "y": 2938.984375,
+        "width": 202,
+        "height": 17,
+        "top": 2938.984375,
+        "right": 652.5625,
+        "bottom": 2955.984375,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "600 14px / 22.4px Lato, Verdana, Helvetica, sans-serif",
+        "color": "rgb(167, 197, 255)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n            \n          ",
+      "bounds": {
+        "x": 186,
+        "y": 3096.9375,
+        "width": 244.5625,
+        "height": 252.140625,
+        "top": 3096.9375,
+        "right": 430.5625,
+        "bottom": 3349.078125,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "20px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "PAPERTITLE",
+      "text": "ArMyo",
+      "bounds": {
+        "x": 450.5625,
+        "y": 3118.9375,
+        "width": 49.828125,
+        "height": 17,
+        "top": 3118.9375,
+        "right": 500.390625,
+        "bottom": 3135.9375,
+        "left": 450.5625
+      },
+      "style": {
+        "font": "600 14px / 22.4px Lato, Verdana, Helvetica, sans-serif",
+        "color": "rgb(167, 197, 255)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SECTIONHEADING",
+      "text": "cat service.txt",
+      "bounds": {
+        "x": 191,
+        "y": 3354.078125,
+        "width": 890,
+        "height": 24,
+        "top": 3354.078125,
+        "right": 1081,
+        "bottom": 3378.078125,
+        "left": 191
+      },
+      "style": {
+        "font": "700 15px / 24px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SECTIONHEADING",
+      "text": "cat teaching.txt",
+      "bounds": {
+        "x": 191,
+        "y": 3438.46875,
+        "width": 890,
+        "height": 24,
+        "top": 3438.46875,
+        "right": 1081,
+        "bottom": 3462.46875,
+        "left": 191
+      },
+      "style": {
+        "font": "700 15px / 24px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "SECTIONHEADING",
+      "text": "cat misc.txt",
+      "bounds": {
+        "x": 191,
+        "y": 3567.640625,
+        "width": 890,
+        "height": 24,
+        "top": 3567.640625,
+        "right": 1081,
+        "bottom": 3591.640625,
+        "left": 191
+      },
+      "style": {
+        "font": "700 15px / 24px \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, monospace",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "TD",
+      "text": "\n            \n            \n              Imitation is the most sincere form of f",
+      "bounds": {
+        "x": 186,
+        "y": 3968.765625,
+        "width": 900,
+        "height": 69.1875,
+        "top": 3968.765625,
+        "right": 1086,
+        "bottom": 4037.953125,
+        "left": 186
+      },
+      "style": {
+        "font": "14px / 22.4px \"Titillium Web\", Verdana, Helvetica, sans-serif",
+        "color": "rgb(245, 245, 245)",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    }
+  ]
+}

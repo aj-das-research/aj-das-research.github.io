@@ -1,21 +1,17 @@
-<article class="publication" id="paper-{{ .id }}" aria-labelledby="title-{{ .id }}">
-  <figure class="paper-visual" aria-labelledby="caption-{{ .id }}">
-    <a class="paper-figure-link" href="{{ .figure.full | relURL }}" target="_blank" rel="noopener" aria-label="Open full-size figure for {{ .title }} (new tab)">
-      <img src="{{ .figure.src | relURL }}" alt="{{ .figure.alt }}" width="{{ .figure.width }}" height="{{ .figure.height }}" loading="lazy" decoding="async">
-    </a>
-    <figcaption id="caption-{{ .id }}">
-      <a class="figure-source" href="{{ .figure.source }}">{{ .figure.caption }}</a>
-      <a class="figure-expand" href="{{ .figure.full | relURL }}" target="_blank" rel="noopener" aria-label="View full-size figure for {{ .title }} (new tab)">Full size ↗</a>
-    </figcaption>
+<article class="publication{{ if .featured }} featured{{ end }}" id="paper-{{ .id }}" aria-labelledby="title-{{ .id }}">
+  <figure class="paper-visual">
+    <a class="paper-figure-link" href="{{ .figure.full | relURL }}" target="_blank" rel="noopener" aria-label="Open full-size figure for {{ .title }} (new tab)"><img src="{{ .figure.src | relURL }}" alt="{{ .figure.alt }}" width="{{ .figure.width }}" height="{{ .figure.height }}" loading="lazy" decoding="async"></a>
   </figure>
   <div class="publication-content">
     <h3 id="title-{{ .id }}"><a href="{{ .url }}">{{ .title }}</a></h3>
-    <p class="publication-meta">{{ .year }} · {{ .venue }}</p>
-    <p class="authors">{{ .authors }}</p>
+    <p class="authors">{{ range $index, $author := split .authors ", " }}{{ if $index }}, {{ end }}{{ if eq $author "Abhijit Das" }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ end }}</p>
+    <span class="venue-badge">{{ .venue }} {{ .year }}</span>
     <div class="publication-actions">
-      <a href="{{ .url }}">Paper</a>
-      {{ with .code }}<a href="{{ . }}">Code</a>{{ end }}
-      <details><summary>Abstract</summary><p class="abstract">{{ .summary }}</p></details>
+      <button class="text-button" data-disclosure="abstract-{{ .id }}" aria-expanded="false" aria-controls="abstract-{{ .id }}" hidden>abstract</button><span class="js-separator" hidden> / </span><button class="text-button" data-disclosure="bibtex-{{ .id }}" aria-expanded="false" aria-controls="bibtex-{{ .id }}" hidden>bibtex</button><span class="js-separator" hidden> / </span><a href="{{ .url }}">paper</a>{{ with .code }} / <a href="{{ . }}">code</a>{{ end }} / <a class="figure-source" href="{{ .figure.source }}" title="{{ .figure.caption }}">figure</a> / <a class="figure-expand" href="{{ .figure.full | relURL }}" target="_blank" rel="noopener" aria-label="View full-size figure for {{ .title }} (new tab)">full size</a>
     </div>
+    <div id="abstract-{{ .id }}" class="paper-abstract" hidden><p><em>{{ .summary }}</em></p></div>
+    <pre id="bibtex-{{ .id }}" class="paper-bibtex" hidden>{{ .bibtex }}</pre>
+    <p class="paper-tldr"><em>{{ .summary }}</em></p>
+    <noscript><details><summary>bibtex</summary><pre>{{ .bibtex }}</pre></details></noscript>
   </div>
 </article>
