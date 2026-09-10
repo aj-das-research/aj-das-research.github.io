@@ -7,9 +7,14 @@
     "url": "https://arxiv.org/abs/2606.21384",
     "summary": "EnTrust separates shared anatomy, modality-specific cues, and inter-modal conflict. A diffusion-based segmentation model uses these signals to express uncertainty where imaging modalities disagree.",
     "id": "entrust",
-    "visualization": {
-      "label": "Modality disagreement",
-      "description": "Two modality surfaces separate around a shared structure, making disagreement visible."
+    "figure": {
+      "src": "media/publications/entrust.webp",
+      "full": "media/publications/entrust-full.webp",
+      "width": 1026,
+      "height": 900,
+      "caption": "Figure 2 · EnTrust architecture",
+      "alt": "Modality encoders feed shared, unique and conflict features into diffusion segmentation and uncertainty estimation.",
+      "source": "https://arxiv.org/html/2606.21384v1#S2.F2"
     }
   },
   {
@@ -20,9 +25,14 @@
     "url": "https://arxiv.org/abs/2606.20913",
     "summary": "PROTON maintains an online prototype bank from high-confidence test predictions and combines prototype distance with concept-matching scores to detect distribution shifts.",
     "id": "proton",
-    "visualization": {
-      "label": "Prototype distance",
-      "description": "A moving query is compared with clusters and their prototype centers."
+    "figure": {
+      "src": "media/publications/proton.webp",
+      "full": "media/publications/proton-full.webp",
+      "width": 1200,
+      "height": 491,
+      "caption": "Figure 2 · PROTON architecture",
+      "alt": "Frozen vision-language encoders connect to an online prototype bank, a confidence gate and adaptive out-of-distribution scoring.",
+      "source": "https://arxiv.org/html/2606.20913v1#S1.F2"
     }
   },
   {
@@ -32,11 +42,16 @@
     "venue": "MICCAI",
     "url": "https://arxiv.org/abs/2606.21368",
     "id": "graph",
-    "visualization": {
-      "label": "Anatomy correspondence",
-      "description": "Two graphs align corresponding nodes across separate observations."
-    },
-    "summary": "Graph-of-Differences represents images as graphs of named anatomical regions, matches corresponding nodes, and aligns anatomy-level differences with the global image representation."
+    "summary": "Graph-of-Differences represents images as graphs of named anatomical regions, matches corresponding nodes, and aligns anatomy-level differences with the global image representation.",
+    "figure": {
+      "src": "media/publications/graph.webp",
+      "full": "media/publications/graph-full.webp",
+      "width": 1200,
+      "height": 511,
+      "caption": "Figure 2 · Graph-of-Differences",
+      "alt": "Anatomical graph construction, graph encoding and soft correspondence connect image representations to difference alignment.",
+      "source": "https://arxiv.org/html/2606.21368v1#S2.F2"
+    }
   },
   {
     "title": "Weight-Decay Turns Transformer Loss Landscapes Villani: Functional-Analytic Foundations for Optimization and Generalization",
@@ -45,11 +60,16 @@
     "venue": "Preprint",
     "url": "https://arxiv.org/abs/2605.06599",
     "id": "landscape",
-    "visualization": {
-      "label": "Regularized loss geometry",
-      "description": "A particle traces a path over a curved illustrative energy surface."
-    },
-    "summary": "A functional-analytic study of Transformer objectives with weight decay, investigating coercive loss geometry, convergence of noisy optimization, and generalization bounds."
+    "summary": "A functional-analytic study of Transformer objectives with weight decay, investigating coercive loss geometry, convergence of noisy optimization, and generalization bounds.",
+    "figure": {
+      "src": "media/publications/landscape.webp",
+      "full": "media/publications/landscape-full.webp",
+      "width": 1150,
+      "height": 900,
+      "caption": "Figure 1 · Transformer parameterization",
+      "alt": "A Transformer block with residual connections and annotated attention, normalization and feed-forward parameter groups.",
+      "source": "https://arxiv.org/html/2605.06599v1#S2.F1"
+    }
   },
   {
     "title": "Ethical Framework for Responsible Foundational Models in Medical Imaging",
@@ -58,11 +78,16 @@
     "venue": "Frontiers in Medicine",
     "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1544501/full",
     "id": "ethics",
-    "visualization": {
-      "label": "Responsible model lifecycle",
-      "description": "Connected checkpoints surround a central model, representing oversight throughout its lifecycle."
-    },
-    "summary": "An ethical framework for medical imaging foundation models, discussing transparency, fairness, privacy, accountability, and responsible deployment."
+    "summary": "An ethical framework for medical imaging foundation models, discussing transparency, fairness, privacy, accountability, and responsible deployment.",
+    "figure": {
+      "src": "media/publications/ethics.webp",
+      "full": "media/publications/ethics-full.webp",
+      "width": 1200,
+      "height": 429,
+      "caption": "Figure 1 · Foundation-model workflow",
+      "alt": "Data sources, model training, ethical considerations, downstream medical tasks and deployment in a foundation-model workflow.",
+      "source": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1544501/full#F1"
+    }
   },
   {
     "title": "Confidence-guided Semi-supervised Learning for Generalized Lesion Localization in X-ray Images",
@@ -71,12 +96,17 @@
     "venue": "MICCAI",
     "url": "https://papers.miccai.org/miccai-2024/154-Paper3485.html",
     "id": "lesion",
-    "visualization": {
-      "label": "Confidence-guided localization",
-      "description": "Layered image planes highlight candidate regions with different confidence cues."
-    },
     "summary": "A semi-supervised approach to lesion localization in X-ray images, using confidence-aware pseudo-labeling to learn from labeled and unlabeled examples.",
-    "code": "https://github.com/aj-das-research/AnoMed"
+    "code": "https://github.com/aj-das-research/AnoMed",
+    "figure": {
+      "src": "media/publications/lesion.webp",
+      "full": "media/publications/lesion-full.webp",
+      "width": 1200,
+      "height": 361,
+      "caption": "Figure 2 · AnoMed architecture",
+      "alt": "Teacher-student learning, the scale-invariant bottleneck and confidence-guided pseudo-label optimization in AnoMed.",
+      "source": "https://papers.miccai.org/miccai-2024/paper/3485_paper.pdf#page=3"
+    }
   },
   {
     "title": "ProFONet: Prototypical Feature Space Optimized Network for Few-shot Classification",
@@ -85,11 +115,17 @@
     "venue": "ICPR",
     "url": "https://link.springer.com/chapter/10.1007/978-3-031-78183-4_25",
     "id": "profonet",
-    "visualization": {
-      "label": "Learning the feature space",
-      "description": "Colored example clusters contract around their class prototypes."
+    "summary": "ProFONet optimizes prototypical representations for few-shot classification using variance, invariance, and covariance regularization to improve class separation.",
+    "figure": {
+      "src": "media/publications/profonet.webp",
+      "full": "media/publications/profonet-full.webp",
+      "width": 1158,
+      "height": 692,
+      "caption": "ProFONet architecture",
+      "alt": "Support and query embeddings pass through distance learning and feature optimization with variance, invariance and covariance regularization.",
+      "source": "https://github.com/aj-das-research/ProFONet"
     },
-    "summary": "ProFONet optimizes prototypical representations for few-shot classification using variance, invariance, and covariance regularization to improve class separation."
+    "code": "https://github.com/aj-das-research/ProFONet"
   },
   {
     "title": "SEANet: Rethinking Skip-Connections Design in Encoder-Decoder Networks via Synergistic Spatial-Spectral Fusion for LDCT Denoising",
@@ -98,11 +134,17 @@
     "venue": "ICPR",
     "url": "https://link.springer.com/chapter/10.1007/978-3-031-78198-8_29",
     "id": "seanet",
-    "visualization": {
-      "label": "Spatial–spectral fusion",
-      "description": "Two evolving signal surfaces connect across scales, suggesting complementary representations."
+    "summary": "SEANet studies skip connections that combine spatial and spectral information in encoder-decoder networks for low-dose CT denoising.",
+    "figure": {
+      "src": "media/publications/seanet.webp",
+      "full": "media/publications/seanet-full.webp",
+      "width": 1195,
+      "height": 862,
+      "caption": "SEANet architecture",
+      "alt": "A CT denoising encoder-decoder joins spatial and spectral residual units across skip connections.",
+      "source": "https://github.com/aj-das-research/SEANet"
     },
-    "summary": "SEANet studies skip connections that combine spatial and spectral information in encoder-decoder networks for low-dose CT denoising."
+    "code": "https://github.com/aj-das-research/SEANet"
   },
   {
     "title": "PAM-UNet: Shifting Attention on Region of Interest in Medical Images",
@@ -111,11 +153,16 @@
     "venue": "IEEE EMBC",
     "url": "https://arxiv.org/abs/2405.01503",
     "id": "pam",
-    "visualization": {
-      "label": "Attention across scales",
-      "description": "An attention region moves through a hierarchy of feature planes."
-    },
-    "summary": "PAM-UNet uses progressive attention to focus on regions of interest in medical image segmentation."
+    "summary": "PAM-UNet uses progressive attention to focus on regions of interest in medical image segmentation.",
+    "figure": {
+      "src": "media/publications/pam.webp",
+      "full": "media/publications/pam-full.webp",
+      "width": 1200,
+      "height": 403,
+      "caption": "Figure 2 · PAM-UNet architecture",
+      "alt": "PAM-UNet encoder-decoder architecture, progressive attention gate and feature maps before and after attention.",
+      "source": "https://arxiv.org/html/2405.01503v1#S2.F2"
+    }
   },
   {
     "title": "Enhancing Colonoscopy Outcomes with DAPoDet-based AI for Real-time Sessile Serrated Polyp Detection",
@@ -124,10 +171,15 @@
     "venue": "DDW · Conference abstract",
     "url": "https://www.giejournal.org/article/S0016-5107(24)00898-8/fulltext",
     "id": "dapodet",
-    "visualization": {
-      "label": "Detection in motion",
-      "description": "A scanning ring moves through an abstract endoscopic tunnel and highlights a candidate region."
-    },
-    "summary": "A DDW conference abstract investigating real-time AI-assisted detection of sessile serrated polyps in colonoscopy video."
+    "summary": "A DDW conference abstract investigating real-time AI-assisted detection of sessile serrated polyps in colonoscopy video.",
+    "figure": {
+      "src": "media/publications/dapodet.webp",
+      "full": "media/publications/dapodet-full.webp",
+      "width": 1200,
+      "height": 224,
+      "caption": "DAPoDet architecture",
+      "alt": "Feature aggregation, channel and spatial attention, multi-scale detection and an example detected polyp.",
+      "source": "https://www.giejournal.org/article/S0016-5107(24)00898-8/fulltext"
+    }
   }
 ]

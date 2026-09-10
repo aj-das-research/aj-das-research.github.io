@@ -1,6 +1,6 @@
 # Deployment status
 
-Public publication was explicitly approved by the user on 2026-09-10, including the previously described CV, portrait, biography, academic email, and public repository destination. Ten distinct interactive 3D publication illustrations were added before publication.
+Public publication was explicitly approved by the user on 2026-09-10, including the previously described CV, portrait, biography, academic email, and public repository destination. Ten distinct interactive 3D publication illustrations were added for the initial publication and subsequently replaced with original paper figures at the user's request.
 
 - Repository: https://github.com/aj-das-research/aj-das-research.github.io
 - Website: https://aj-das-research.github.io/
@@ -12,8 +12,12 @@ The template was downloaded as a shallow clone. Its missing ancestors prevented 
 
 The existing abhijitdas.net website and its separate deployment remain unchanged.
 
-## Verified live
+## Initial deployment verification
 
 The initial build and deploy jobs both completed successfully. Live HTTPS checks returned 200 for the homepage, stylesheet, hero script, publication controller, geometry module, portrait and valid CV PDF. The live homepage contains all ten publication figures and no localhost references.
 
 The full browser interaction suite was rerun against https://aj-das-research.github.io/: all ten scenes passed pause/play/reset, pointer dragging, keyboard rotation, reduced motion and JavaScript-free fallback checks. Five viewport widths passed without overflow; no browser page errors occurred. The published site was opened in the user's browser.
+
+## Original figure revision
+
+The current revision replaces all ten synthetic publication illustrations with original paper or author-repository diagrams, links their sources and supplies full-resolution images. The existing GitHub Actions workflow publishes the revision on push to `main`, including figure checksum verification during the build. The hero tesseract remains active. Local browser and production-build evidence is recorded in `QA.md`.

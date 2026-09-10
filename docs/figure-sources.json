@@ -1,0 +1,184 @@
+[
+  {
+    "id": "entrust",
+    "source_page": "https://arxiv.org/html/2606.21384v1#S2.F2",
+    "source_asset": "https://arxiv.org/html/2606.21384v1/figures/architecture_diagram.png",
+    "retrieved": "2026-09-10",
+    "original_dimensions": [
+      3980,
+      3490
+    ],
+    "thumbnail_dimensions": [
+      1026,
+      900
+    ],
+    "processing": "White-background alpha compositing; lossless WebP encoding; proportional thumbnail reduction, no figure content cropped or redrawn.",
+    "full_sha256": "dc3bf5ef24cd01ea21307aa7350c58fd428b5dbbc1597b8695aee22946bd5066",
+    "thumbnail_sha256": "c0de8b3c5fcd68cc10c66072b39d09fba4b4aff5763bb0f060964e1a4256d374",
+    "source_sha256": "3f47731ba7d8cebc5605e9e56a223c4ab6c426d1dfbae0597a26c2cf6f3dbece"
+  },
+  {
+    "id": "proton",
+    "source_page": "https://arxiv.org/html/2606.20913v1#S1.F2",
+    "source_asset": "https://arxiv.org/pdf/2606.20913v1",
+    "retrieved": "2026-09-10",
+    "original_dimensions": [
+      2112,
+      864
+    ],
+    "thumbnail_dimensions": [
+      1200,
+      491
+    ],
+    "processing": "White-background alpha compositing; lossless WebP encoding; proportional thumbnail reduction, no figure content cropped or redrawn.",
+    "full_sha256": "0beeacd1970da5b2a617e700e4f6377875a817fc04d7e7b13d2f18e5617a8d44",
+    "thumbnail_sha256": "d08377d65e7463fa48f86448c6dafa6f5fe3394f493477b62839e7053134464f",
+    "extraction": "PDF page 3, rectangle [176,130,440,238] points, rendered at 8x with PyMuPDF. Includes the whole diagram; excludes page furniture and caption.",
+    "source_sha256": "d51e7a19347b38acde1ebf3a56faffca47dff38d22719be69b58f617397acca2"
+  },
+  {
+    "id": "graph",
+    "source_page": "https://arxiv.org/html/2606.21368v1#S2.F2",
+    "source_asset": "https://arxiv.org/html/2606.21368v1/figures/architecture_diagram.png",
+    "retrieved": "2026-09-10",
+    "original_dimensions": [
+      5750,
+      2450
+    ],
+    "thumbnail_dimensions": [
+      1200,
+      511
+    ],
+    "processing": "White-background alpha compositing; lossless WebP encoding; proportional thumbnail reduction, no figure content cropped or redrawn.",
+    "full_sha256": "ca1d122d50c72b050ddd6fc54b2b34e22165ccfc7295cf3e0d25ce892c4f3f2a",
+    "thumbnail_sha256": "bd5a7561ad466bd720629a2409c3d7b032c827d608254dee24c2441e783f72e7",
+    "source_sha256": "2f76af4656ede2370343dda5f8670b41f9edb66f91accb199cc7d013e23e35b6"
+  },
+  {
+    "id": "landscape",
+    "source_page": "https://arxiv.org/html/2605.06599v1#S2.F1",
+    "source_asset": "https://arxiv.org/html/2605.06599v1/figures/figure2-new.png",
+    "retrieved": "2026-09-10",
+    "original_dimensions": [
+      1594,
+      1247
+    ],
+    "thumbnail_dimensions": [
+      1150,
+      900
+    ],
+    "processing": "White-background alpha compositing; lossless WebP encoding; proportional thumbnail reduction, no figure content cropped or redrawn.",
+    "full_sha256": "6ba086b71b7c227eb0338c0d38874ee8aac3463b70fa7773777cbf4f34c12738",
+    "thumbnail_sha256": "3458bd825e6495702562dddd29e591fb52d56b8e589b5d381e83430bb88ef9ab",
+    "source_sha256": "f75ccce15b624c6235083cf32cf53d15c0e2d25c13f53406d6cefee8a5dd9d8d"
+  },
+  {
+    "id": "ethics",
+    "source_page": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1544501/full#F1",
+    "source_asset": "https://www.frontiersin.org/files/Articles/1544501/xml-images/fmed-12-1544501-g0001.webp",
+    "retrieved": "2026-09-10",
+    "original_dimensions": [
+      1772,
+      634
+    ],
+    "thumbnail_dimensions": [
+      1200,
+      429
+    ],
+    "processing": "White-background alpha compositing; lossless WebP encoding; proportional thumbnail reduction, no figure content cropped or redrawn.",
+    "full_sha256": "d821092e142d2f8577e6ec16a969d46f3d4b4d7082d632512f4959dda9734abb",
+    "thumbnail_sha256": "09c1ac22029ebab667e8c2616f427b1244ffd4eeb614246928d15583a79f5bf7",
+    "source_sha256": "5a56b9fc51486fbe5e1cf9f1a8d2d6b6d9dad7707f6943145833eb41ad2c5996"
+  },
+  {
+    "id": "lesion",
+    "source_page": "https://papers.miccai.org/miccai-2024/paper/3485_paper.pdf#page=3",
+    "source_asset": "https://papers.miccai.org/miccai-2024/paper/3485_paper.pdf",
+    "retrieved": "2026-09-10",
+    "original_dimensions": [
+      3494,
+      1051
+    ],
+    "thumbnail_dimensions": [
+      1200,
+      361
+    ],
+    "processing": "White-background alpha compositing; lossless WebP encoding; proportional thumbnail reduction, no figure content cropped or redrawn.",
+    "full_sha256": "9295790ac93a99438bf2a708077872532c730a605b45a15185dfb8ebe62a84ca",
+    "thumbnail_sha256": "dec621fcf58710a36198a5153e7b83d6bfa43d4b8245bbee8d938e8ff5b5f09a",
+    "extraction": "PDF page 3, embedded image xref 6 with soft mask xref 8, extracted at original 3494x1051 resolution with PyMuPDF.",
+    "source_sha256": "e98ab6f166fb993bb90a7c814ed99f839a970725ce6a35f31e460933cffdd424"
+  },
+  {
+    "id": "profonet",
+    "source_page": "https://github.com/aj-das-research/ProFONet",
+    "source_asset": "https://raw.githubusercontent.com/aj-das-research/ProFONet/main/ProFONet.png",
+    "retrieved": "2026-09-10",
+    "original_dimensions": [
+      1158,
+      692
+    ],
+    "thumbnail_dimensions": [
+      1158,
+      692
+    ],
+    "processing": "White-background alpha compositing; lossless WebP encoding; proportional thumbnail reduction, no figure content cropped or redrawn.",
+    "full_sha256": "fe8b33668312ac5a7282234d0040b99cc43a97769d185be847ddec2fadbadb56",
+    "thumbnail_sha256": "fe8b33668312ac5a7282234d0040b99cc43a97769d185be847ddec2fadbadb56",
+    "source_sha256": "336aeb7ceeaab548374969593db62222ccc993da591c8e14b845959874281958"
+  },
+  {
+    "id": "seanet",
+    "source_page": "https://github.com/aj-das-research/SEANet",
+    "source_asset": "https://raw.githubusercontent.com/aj-das-research/SEANet/main/SEANet_architecture-1.png",
+    "retrieved": "2026-09-10",
+    "original_dimensions": [
+      1195,
+      862
+    ],
+    "thumbnail_dimensions": [
+      1195,
+      862
+    ],
+    "processing": "White-background alpha compositing; lossless WebP encoding; proportional thumbnail reduction, no figure content cropped or redrawn.",
+    "full_sha256": "9b39a33e10a099a09e8414d89e0e549534713747ef44e2b3d39e737afa9164d4",
+    "thumbnail_sha256": "9b39a33e10a099a09e8414d89e0e549534713747ef44e2b3d39e737afa9164d4",
+    "source_sha256": "021c2d777e502d463c781a7c58b4ba2986e9e513c21c34a5b27d84b4fe4d4261"
+  },
+  {
+    "id": "pam",
+    "source_page": "https://arxiv.org/html/2405.01503v1#S2.F2",
+    "source_asset": "https://arxiv.org/html/2405.01503v1/EMBC-Model.jpg",
+    "retrieved": "2026-09-10",
+    "original_dimensions": [
+      4323,
+      1451
+    ],
+    "thumbnail_dimensions": [
+      1200,
+      403
+    ],
+    "processing": "White-background alpha compositing; lossless WebP encoding; proportional thumbnail reduction, no figure content cropped or redrawn.",
+    "full_sha256": "d06e91647c7c381869ec6836950a8b040b87850f462db3453ec25701ce15f558",
+    "thumbnail_sha256": "890094b30e89235da5f30db755db0be055cafb678d77d9685fb14d2910c1d352",
+    "source_sha256": "e30f1f32643334d172ea86e290982317ab873d022ef1dc3201b0d9c1dc14af88"
+  },
+  {
+    "id": "dapodet",
+    "source_page": "https://www.giejournal.org/article/S0016-5107(24)00898-8/fulltext",
+    "source_asset": "https://ars.els-cdn.com/content/image/1-s2.0-S0016510724008988-fx1_lrg.jpg",
+    "retrieved": "2026-09-10",
+    "original_dimensions": [
+      1658,
+      310
+    ],
+    "thumbnail_dimensions": [
+      1200,
+      224
+    ],
+    "processing": "White-background alpha compositing; lossless WebP encoding; proportional thumbnail reduction, no figure content cropped or redrawn.",
+    "full_sha256": "e5cd8f27bb9d5bfe220dd28c6f5103ef9aff099c7ed04e42e7641ef8d2e2579b",
+    "thumbnail_sha256": "14c062d867ff93e06fb23c485de3384326332048990eb0c22ba7d4d9dccbc100",
+    "source_sha256": "fa062b64a1dea1fcdd35f159f73322a7cd6d767be9620b12b2d31ef117ef8b82"
+  }
+]

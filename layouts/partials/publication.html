@@ -1,17 +1,12 @@
 <article class="publication" id="paper-{{ .id }}" aria-labelledby="title-{{ .id }}">
-  <figure class="paper-visual" data-scene="{{ .id }}" aria-labelledby="caption-{{ .id }}">
-    <div class="scene-stage">
-      <img class="scene-fallback" src="{{ printf "media/scenes/%s.svg" .id | relURL }}" alt="{{ .visualization.description }}" width="480" height="220" loading="lazy">
-      <canvas hidden tabindex="0" role="img" aria-label="{{ .visualization.label }} — interactive 3D illustration" aria-describedby="description-{{ .id }}"></canvas>
-    </div>
-    <figcaption>
-      <div class="scene-controls" hidden>
-        <button type="button" data-motion aria-pressed="false" aria-label="Pause animation for {{ .id }}">Pause</button>
-        <button type="button" data-reset aria-label="Reset view for {{ .id }}">Reset</button>
-      </div>
-      <span id="caption-{{ .id }}">{{ .visualization.label }}</span>
+  <figure class="paper-visual" aria-labelledby="caption-{{ .id }}">
+    <a class="paper-figure-link" href="{{ .figure.full | relURL }}" target="_blank" rel="noopener" aria-label="Open full-size figure for {{ .title }} (new tab)">
+      <img src="{{ .figure.src | relURL }}" alt="{{ .figure.alt }}" width="{{ .figure.width }}" height="{{ .figure.height }}" loading="lazy" decoding="async">
+    </a>
+    <figcaption id="caption-{{ .id }}">
+      <a class="figure-source" href="{{ .figure.source }}">{{ .figure.caption }}</a>
+      <a class="figure-expand" href="{{ .figure.full | relURL }}" target="_blank" rel="noopener" aria-label="View full-size figure for {{ .title }} (new tab)">Full size ↗</a>
     </figcaption>
-    <p id="description-{{ .id }}" class="visually-hidden">{{ .visualization.description }} Conceptual illustration, not experimental data. Drag horizontally or use arrow keys to rotate.</p>
   </figure>
   <div class="publication-content">
     <h3 id="title-{{ .id }}"><a href="{{ .url }}">{{ .title }}</a></h3>

@@ -33,3 +33,24 @@ Seven additional entries were matched against the existing public homepage and t
 - DAPoDet: https://www.giejournal.org/article/S0016-5107(24)00898-8/fulltext and https://bagcilab.com/event/three-abstracts-are-accepted-at-the-worlds-premier-gathering-of-gastroenterologists-researchers-and-industry-partners-and-we-also-obtained-one-distinction-poster-prize/. Publisher title is indexed; direct publisher rendering failed. Author list retained from the user's existing public homepage. Labeled DDW conference abstract.
 
 Visualizations are original conceptual interpretations of method descriptions, not reproductions of paper figures, model outputs, learned embeddings, quantitative analyses or clinical data.
+
+## Original publication figures — verified 2026-09-10
+
+Figures below come directly from the cited paper or public author repository. No generated teasers or synthesized scientific content are used. The numbered captions identify the source figure rather than reproduce its full caption. Original authors and publishers retain their rights; the template license does not relicense the paper figures.
+
+| Entry | Figure | Source asset |
+| --- | --- | --- |
+| entrust | [Figure 2 · EnTrust architecture](https://arxiv.org/html/2606.21384v1#S2.F2) | [Original file](https://arxiv.org/html/2606.21384v1/figures/architecture_diagram.png) |
+| proton | [Figure 2 · PROTON architecture](https://arxiv.org/html/2606.20913v1#S1.F2) | [Original file](https://arxiv.org/pdf/2606.20913v1) |
+| graph | [Figure 2 · Graph-of-Differences](https://arxiv.org/html/2606.21368v1#S2.F2) | [Original file](https://arxiv.org/html/2606.21368v1/figures/architecture_diagram.png) |
+| landscape | [Figure 1 · Transformer parameterization](https://arxiv.org/html/2605.06599v1#S2.F1) | [Original file](https://arxiv.org/html/2605.06599v1/figures/figure2-new.png) |
+| ethics | [Figure 1 · Foundation-model workflow](https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1544501/full#F1) | [Original file](https://www.frontiersin.org/files/Articles/1544501/xml-images/fmed-12-1544501-g0001.webp) |
+| lesion | [Figure 2 · AnoMed architecture](https://papers.miccai.org/miccai-2024/paper/3485_paper.pdf#page=3) | [Original file](https://papers.miccai.org/miccai-2024/paper/3485_paper.pdf) |
+| profonet | [ProFONet architecture](https://github.com/aj-das-research/ProFONet) | [Original file](https://raw.githubusercontent.com/aj-das-research/ProFONet/main/ProFONet.png) |
+| seanet | [SEANet architecture](https://github.com/aj-das-research/SEANet) | [Original file](https://raw.githubusercontent.com/aj-das-research/SEANet/main/SEANet_architecture-1.png) |
+| pam | [Figure 2 · PAM-UNet architecture](https://arxiv.org/html/2405.01503v1#S2.F2) | [Original file](https://arxiv.org/html/2405.01503v1/EMBC-Model.jpg) |
+| dapodet | [DAPoDet architecture](https://www.giejournal.org/article/S0016-5107(24)00898-8/fulltext) | [Original file](https://ars.els-cdn.com/content/image/1-s2.0-S0016510724008988-fx1_lrg.jpg) |
+
+The PROTON HTML thumbnail was too small for legible enlargement, so the complete Figure 2 diagram was rendered from PDF page 3 at 8x scale. AnoMed Figure 2 was extracted with its alpha mask from PDF page 3 at the embedded image's original resolution. Both extractions were visually checked against the page. The DAPoDet architecture is the publisher's first unnumbered figure (`fx1_lrg.jpg`); the paper is a conference abstract. ProFONet and SEANet figures come from the user's official public code repositories.
+
+`figure-sources.json` records retrieval date, source URL, original and preview dimensions, extraction coordinates where applicable, processing description, source checksum and output checksums. Other than PDF figure extraction, transformations are white-background compositing, proportional thumbnail resizing and lossless WebP encoding. No labels or scientific content are redrawn.

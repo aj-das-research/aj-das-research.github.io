@@ -15,7 +15,6 @@
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
   <script type="module" src="{{ "js/tesseract.js" | relURL }}"></script>
-  <script type="module" src="{{ "js/publication-scenes.js" | relURL }}"></script>
 </head>
 <body>
   {{ $profile := .Site.Data.profile }}
@@ -66,8 +65,8 @@
     </section>
     <section id="publications" class="publications container" aria-labelledby="publications-title">
       <div class="publications-heading">
-        <div><h2 id="publications-title" class="section-title">Publications</h2><p>Research in motion. Explore the ideas behind each paper.</p></div>
-        <div class="publication-guide"><p>Conceptual illustrations · Drag to rotate</p><a href="{{ (index $profile.social 0).url }}">All publications on Scholar {{ partial "arrow.html" }}</a></div>
+        <div><h2 id="publications-title" class="section-title">Publications</h2><p>Explore the methods behind the research.</p></div>
+        <div class="publication-guide"><p>Original paper figures · Click to enlarge</p><a href="{{ (index $profile.social 0).url }}">All publications on Scholar {{ partial "arrow.html" }}</a></div>
       </div>
       <div class="publication-list">
         {{ range .Site.Data.publications }}{{ partial "publication.html" . }}{{ end }}

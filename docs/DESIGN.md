@@ -28,7 +28,7 @@ AD.; About; Research; Publications; Contact; Abhijit Das; PhD in Machine Learnin
 5. A source-code link is included beside the required upstream credit.
 6. News is omitted from this focused page because publication and research sections already cover the selected public work; the older website remains available.
 
-## Publication animation revision
+## Superseded publication animation revision
 
 User explicitly requested publication and 3D animations for every listed paper. The new active section concept is `design/publications-3d.png`, generated with built-in Image Gen at 1505 × 1045. Brief: retain white/navy/teal academic typography, pair an open citation row with a pale 3D canvas, place Pause/Reset and a method caption below the canvas, and repeat for ten papers. All ten entries from the existing public publication list are now included; this is not a claim of an exhaustive Scholar export.
 
@@ -37,3 +37,11 @@ The section now uses the full content width with 36% illustration and 64% citati
 Distinct concepts: inter-modal surfaces; online prototype distances; anatomical graph correspondence; a regularized energy surface; model-lifecycle oversight; confidence-highlighted image planes; contracting prototype clusters; spatial/spectral signal surfaces; attention through feature scales; endoscopic scanning. These are explicitly labeled conceptual illustrations, with no inferred results or patient data.
 
 Intentional differences from the raster reference: retain complete verified author lists where available rather than shortened reference bylines; retain real paper/code links and the Scholar link; use deterministic scientific forms whose perspective changes interactively. Canvas color is #edf3f7; no raster texture is needed. Controls and paper text remain native HTML.
+
+## Original paper figures (current design, 2026-09-10)
+
+The user corrected the publication direction: use the actual main architecture or teaser figures from the papers instead of synthetic animated illustrations. This revision supersedes the ten-scene concept. It is a targeted change to the existing design; no generated replacement figures are used.
+
+All ten publication rows now show original diagrams, with a 43% figure column, complete citations, a source-linked caption and a full-size image link. Mobile stacks figure above citation. White figure backgrounds, proportional sizing and `object-fit: contain` preserve all panels and labels; no fixed crop is imposed. Large original files are paired with smaller, lazy-loaded, lossless WebP thumbnails. Both figure links work without JavaScript. The hero tesseract remains interactive and follows reduced-motion preferences.
+
+Paper canvas scripts, procedural scene geometry, generated SVG fallbacks and their obsolete tests are removed. Previous generated references and QA screenshots remain historical records, not active design specifications. See `figure-sources.json` for precise provenance and PDF extraction details.
