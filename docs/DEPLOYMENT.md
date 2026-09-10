@@ -25,3 +25,5 @@ The current revision replaces all ten synthetic publication illustrations with o
 ## Terminal theme revision
 
 The user requested an exact visual theme match to mvp18.github.io after the original-figure revision. The new presentation uses the same GitHub Pages workflow and retains the public identity and figure assets. Dark/light mode, email reveal, citation disclosures, source links, mobile layout and the side-project tesseract are verified before push. `design-qa.md` records source comparison and intentional content differences.
+
+Theme deployment run 34486338873 succeeded, and the full live browser interaction suite passed. A returning browser exposed cached CSS from the previous presentation; content-derived query versions now refresh stylesheet and script URLs whenever their content changes.

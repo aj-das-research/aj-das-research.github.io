@@ -13,12 +13,12 @@
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content="{{ "media/abhijit-das.jpeg" | absURL }}">
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
-  <script src="{{ "js/theme-init.js" | relURL }}"></script>
-  <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "css/icons.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
-  <script src="{{ "js/site.js" | relURL }}" defer></script>
-  <script type="module" src="{{ "js/tesseract.js" | relURL }}"></script>
+  <script src="{{ partial "asset-url.html" "js/theme-init.js" }}"></script>
+  <link rel="stylesheet" href="{{ partial "asset-url.html" "css/fonts.css" }}">
+  <link rel="stylesheet" href="{{ partial "asset-url.html" "css/icons.css" }}">
+  <link rel="stylesheet" href="{{ partial "asset-url.html" "css/site.css" }}">
+  <script src="{{ partial "asset-url.html" "js/site.js" }}" defer></script>
+  <script type="module" src="{{ partial "asset-url.html" "js/tesseract.js" }}"></script>
 </head>
 <body>
   {{ $profile := .Site.Data.profile }}

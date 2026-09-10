@@ -32,6 +32,7 @@ Comparisons place the reference on the left and implementation on the right. Des
 1. Recreated the reference theme using its public HTML/CSS and inspected computed styles, then compared desktop, mobile, dark/light and scrolled publication states.
 2. Fixed a P2 color difference: the source applies two translucent table layers, producing dark highlighted rows of RGB(37, 58, 39). The implementation now uses that exact rendered color, `#253a27`.
 3. Matched the theme button's focused background as well as its hover state. Refreshed screenshots after decoding visible images to eliminate incomplete image-paint artifacts from capture.
+4. Live checks exposed a returning browser using the old cached stylesheet. Added content-derived versions to stylesheet and script URLs so the deployed HTML requests current assets.
 
 No actionable P0, P1 or P2 issues remain within the requested theme adaptation.
 
