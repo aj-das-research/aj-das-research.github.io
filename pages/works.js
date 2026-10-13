@@ -56,8 +56,7 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
           <WorkGridItem id="medos" title="MedOS Limited" thumbnail={thumbMedOS}>
-            Clinical AI products, including radiology reporting agents and
-            conversational avatars
+            Medical agentic AI solutions
           </WorkGridItem>
         </Section>
       </SimpleGrid>
