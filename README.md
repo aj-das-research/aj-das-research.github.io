@@ -1,13 +1,11 @@
 # Abhijit Das - Homepage
 
-Personal homepage built with Next.js, Chakra UI, Three.js and Framer Motion,
+Personal homepage built with Next.js, Chakra UI and Framer Motion,
 exported as a static site for GitHub Pages.
 
 Based on [Takuya Matsuyama's homepage](https://www.craftz.dog/)
 ([source](https://github.com/craftzdog/craftzdog-homepage), MIT). As its license
-requires, the footer links back to the original, and the voxel dog is not used:
-the hero is an original voxel scene (a cat at a laptop on a floating island),
-generated in code in `components/voxel-buddy.js`.
+requires, the footer links back to the original. The 3D voxel scene is not used.
 
 ## Edit content
 

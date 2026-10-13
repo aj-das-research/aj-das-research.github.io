@@ -9,8 +9,7 @@ import {
   ListItem,
   Wrap,
   WrapItem,
-  Tag,
-  useColorModeValue
+  Tag
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -49,17 +48,6 @@ const webLinks = [
 const Home = () => (
   <Layout>
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        {site.greeting}
-      </Box>
-
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -104,14 +92,10 @@ const Home = () => (
           reducing hallucinations, giving models honest uncertainty through
           conformal prediction, catching inputs they were never trained for, and
           looking inside them to understand how they reason. Before the PhD he
-          spent three years in industry R&amp;D building healthcare technology,
-          co-founded the medical AI startup{' '}
+          spent three years in industry R&amp;D building healthcare technology
+          and co-founded the medical AI startup{' '}
           <Link as={NextLink} href="/works/medos/" scroll={false}>
-            MedOS
-          </Link>
-          , and founded{' '}
-          <Link as={NextLink} href="/works/onfinance/" scroll={false}>
-            OnFinance AI
+            MedOS Limited
           </Link>
           .
         </Paragraph>
@@ -150,11 +134,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>Earlier</BioYear>
-          Founded OnFinance AI, later adopted by NSE India
-        </BioSection>
-        <BioSection>
-          <BioYear>Earlier</BioYear>
-          Co-founded MedOS (Innovxcare), building clinical AI products
+          Co-founded MedOS Limited, building clinical AI products
         </BioSection>
         <BioSection>
           <BioYear>2026</BioYear>

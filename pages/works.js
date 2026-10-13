@@ -5,7 +5,6 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbSegEvalKit from '../public/images/works/segevalkit_eyecatch.png'
 import thumbMedOS from '../public/images/works/medos_eyecatch.png'
-import thumbOnFinance from '../public/images/works/onfinance_eyecatch.png'
 
 const Works = () => (
   <Layout title="Projects">
@@ -31,25 +30,15 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Ventures
+          Venture
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
-          <WorkGridItem id="medos" title="MedOS" thumbnail={thumbMedOS}>
+          <WorkGridItem id="medos" title="MedOS Limited" thumbnail={thumbMedOS}>
             Clinical AI products, including radiology reporting agents and
             conversational avatars
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
-          <WorkGridItem
-            id="onfinance"
-            title="OnFinance AI"
-            thumbnail={thumbOnFinance}
-          >
-            Financial AI company, adopted by the National Stock Exchange of
-            India
           </WorkGridItem>
         </Section>
       </SimpleGrid>

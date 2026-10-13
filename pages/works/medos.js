@@ -5,15 +5,15 @@ import Layout from '../../components/layouts/article'
 import thumb from '../../public/images/works/medos_eyecatch.png'
 
 const Work = () => (
-  <Layout title="MedOS">
+  <Layout title="MedOS Limited">
     <Container>
       <Title>
-        MedOS <Badge>Co-founder</Badge>
+        MedOS Limited <Badge>Co-founder</Badge>
       </Title>
       <P>
-        A medical AI startup (Innovxcare) building clinical AI products,
-        including agents that draft radiology reports and conversational avatars
-        for patient-facing care.
+        A medical AI startup building clinical AI products, including agents
+        that draft radiology reports and conversational avatars for
+        patient-facing care.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -26,7 +26,7 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src={thumb.src} alt="MedOS" />
+      <WorkImage src={thumb.src} alt="MedOS Limited" />
     </Container>
   </Layout>
 )

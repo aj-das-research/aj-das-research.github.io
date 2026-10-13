@@ -1,15 +1,8 @@
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-import VoxelScanLoader from '../voxel-scan-loader'
 import site from '../../lib/site'
-
-const LazyVoxelBuddy = dynamic(() => import('../voxel-buddy'), {
-  ssr: false,
-  loading: () => <VoxelScanLoader />
-})
 
 const Main = ({ children, router }) => {
   return (
@@ -32,9 +25,7 @@ const Main = ({ children, router }) => {
 
       <NavBar path={router.asPath} />
 
-      <Container maxW="container.md" pt={14}>
-        <LazyVoxelBuddy />
-
+      <Container maxW="container.md" pt={24}>
         {children}
 
         <Footer />
