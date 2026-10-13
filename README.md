@@ -18,7 +18,7 @@ generated in code in `components/voxel-buddy.js`.
 | About, bio timeline, interests | `pages/index.js` |
 | Research themes | `pages/research.js` |
 | Projects | `pages/works.js`, `pages/works/*.js` |
-| Profile photo | replace `public/images/profile.png` (square, at least 200 px) |
+| Profile photo | replace `public/images/profile.jpg` (square, at least 200 px) |
 | Project thumbnails | `public/images/works/*_eyecatch.png` (1200 x 630) |
 
 ## Run locally

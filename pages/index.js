@@ -26,7 +26,7 @@ import {
 } from 'react-icons/io5'
 import Image from 'next/image'
 import site from '../lib/site'
-import profileImage from '../public/images/profile.png'
+import profileImage from '../public/images/profile.jpg'
 
 const interests = [
   'Vision-language models',
