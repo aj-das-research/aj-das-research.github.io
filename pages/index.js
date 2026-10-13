@@ -83,17 +83,17 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Abhijit is a PhD student in Machine Learning at MBZUAI in Abu Dhabi,
-          supervised by Prof. Imran Razzak and Prof. Nils Lukas. He works on
-          making vision-language models trustworthy enough for medical imaging:
-          reducing hallucinations, giving models honest uncertainty through
-          conformal prediction, catching inputs they were never trained for, and
-          looking inside them to understand how they reason. Before the PhD he
-          spent three years in industry R&amp;D building healthcare technology
-          and co-founded the medical AI startup{' '}
+          supervised by Prof. Imran Razzak and Prof. Nils Lukas, and co-founder
+          and CTO of{' '}
           <Link as={NextLink} href="/works/medos/" scroll={false}>
             MedOS Limited
           </Link>
-          .
+          . His research has three threads: grounding and reasoning in
+          multimodal LLMs, so that a model&apos;s answers can be traced back to
+          the evidence it was given; watermarking AI-generated content; and
+          digital twins. Much of his published work applies these ideas to
+          medical imaging. Before the PhD he was an AI Researcher at GE
+          Healthcare India.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
