@@ -6,13 +6,12 @@ import {
   Link,
   HStack,
   Badge,
-  Button
+  Flex
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { IoSchool } from 'react-icons/io5'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import Paragraph from '../components/paragraph'
 import Video from '../components/video'
 import publications from '../lib/publications'
 import site from '../lib/site'
@@ -32,12 +31,24 @@ const LinkList = ({ links }) => (
 const Publications = () => (
   <Layout title="Publications">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        Publications
-      </Heading>
-      <Paragraph>
-        Selected and recent papers. The full list is on Google Scholar.
-      </Paragraph>
+      <Flex align="baseline" wrap="wrap" columnGap={3} mb={4}>
+        <Heading as="h3" fontSize={20}>
+          Highlights
+        </Heading>
+        <Text fontSize="sm">
+          (All publications:{' '}
+          <Link
+            href={site.links.scholar}
+            target="_blank"
+            display="inline-flex"
+            alignItems="center"
+            gap={1}
+          >
+            <IoSchool /> Google Scholar
+          </Link>
+          )
+        </Text>
+      </Flex>
 
       <Section delay={0.1}>
         <Box mt={6}>
@@ -53,21 +64,6 @@ const Publications = () => (
               {p.video && <Video video={p.video} title={p.title} />}
             </Box>
           ))}
-        </Box>
-      </Section>
-
-      <Section delay={0.2}>
-        <Box align="center" my={4}>
-          <Button
-            as={Link}
-            href={site.links.scholar}
-            target="_blank"
-            colorScheme="teal"
-            leftIcon={<IoSchool />}
-            _hover={{ textDecoration: 'none' }}
-          >
-            All publications on Google Scholar
-          </Button>
         </Box>
       </Section>
     </Container>
