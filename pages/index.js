@@ -28,13 +28,9 @@ import site from '../lib/site'
 import profileImage from '../public/images/profile.jpg'
 
 const interests = [
-  'Vision-language models',
-  'Hallucination mitigation',
-  'Conformal prediction',
-  'OOD detection',
-  'Mechanistic interpretability',
-  'Grounded medical reasoning',
-  '3D medical imaging'
+  'Grounding and Reasoning in Multimodal LLMs',
+  'Watermarking AI Generated Content',
+  'Digital Twins'
 ]
 
 const webLinks = [
