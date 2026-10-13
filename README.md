@@ -9,15 +9,15 @@ requires, the footer links back to the original. The 3D voxel scene is not used.
 
 ## Edit content
 
-| What | Where |
-| --- | --- |
-| Name, tagline, email, GitHub/Scholar/LinkedIn links | `lib/site.js` |
-| Publications | `lib/publications.js` |
-| About, bio timeline, interests | `pages/index.js` |
-| Research themes | `pages/research.js` |
-| Projects | `pages/works.js`, `pages/works/*.js` |
-| Profile photo | replace `public/images/profile.jpg` (square, at least 200 px) |
-| Project thumbnails | `public/images/works/*_eyecatch.png` (1200 x 630) |
+| What                                                | Where                                                         |
+| --------------------------------------------------- | ------------------------------------------------------------- |
+| Name, tagline, email, GitHub/Scholar/LinkedIn links | `lib/site.js`                                                 |
+| Publications                                        | `lib/publications.js`                                         |
+| About, bio timeline, interests                      | `pages/index.js`                                              |
+| Publications page                                   | `pages/publications.js` (list in `lib/publications.js`)       |
+| Projects                                            | `pages/works.js`, `pages/works/*.js`                          |
+| Profile photo                                       | replace `public/images/profile.jpg` (square, at least 200 px) |
+| Project thumbnails                                  | `public/images/works/*_eyecatch.png` (1200 x 630)             |
 
 ## Run locally
 

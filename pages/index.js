@@ -98,13 +98,13 @@ const Home = () => (
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="/research/"
+            href="/publications/"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
             mr={3}
           >
-            Research
+            Publications
           </Button>
           <Button
             as={NextLink}
