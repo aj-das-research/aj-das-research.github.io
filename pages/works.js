@@ -3,25 +3,44 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbSegEvalKit from '../public/images/works/segevalkit_eyecatch.png'
+import thumbGrounding from '../public/images/works/grounding_eyecatch.png'
+import thumbWatermarking from '../public/images/works/watermarking_eyecatch.png'
+import thumbDigitalTwins from '../public/images/works/digitaltwins_eyecatch.png'
 import thumbMedOS from '../public/images/works/medos_eyecatch.png'
 
 const Works = () => (
   <Layout title="Projects">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Research software
+        Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem
-            id="segevalkit"
-            title="SegEvalKit"
-            thumbnail={thumbSegEvalKit}
+            id="grounding-reasoning"
+            title="Grounding and Reasoning"
+            thumbnail={thumbGrounding}
           >
-            An evaluation library for medical image segmentation models on CT
-            volumes: metrics, plots and visualisations from one standard input
+            Grounding and reasoning in multimodal LLMs
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="watermarking"
+            title="Watermarking"
+            thumbnail={thumbWatermarking}
+          >
+            Watermarking AI-generated content
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="digital-twins"
+            title="Digital Twins"
+            thumbnail={thumbDigitalTwins}
+          >
+            Virtual counterparts of real systems
           </WorkGridItem>
         </Section>
       </SimpleGrid>
