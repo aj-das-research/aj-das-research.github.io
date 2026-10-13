@@ -124,21 +124,16 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>Earlier</BioYear>
-          Industry R&amp;D in healthcare technology, including diagnostic AI at
-          GE Healthcare India
-        </BioSection>
-        <BioSection>
-          <BioYear>Earlier</BioYear>
-          Co-founded MedOS Limited, building clinical AI products
-        </BioSection>
-        <BioSection>
-          <BioYear>2026</BioYear>
-          Joined MBZUAI as a researcher (January)
+          <BioYear>2026 to 2029</BioYear>
+          PhD student, MBZUAI
         </BioSection>
         <BioSection>
           <BioYear>2026 to present</BioYear>
-          PhD in Machine Learning, MBZUAI
+          Co-founder and CTO, MedOS Limited
+        </BioSection>
+        <BioSection>
+          <BioYear>Prior</BioYear>
+          AI Researcher, GE Healthcare India
         </BioSection>
       </Section>
 

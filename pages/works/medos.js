@@ -8,7 +8,7 @@ const Work = () => (
   <Layout title="MedOS Limited">
     <Container>
       <Title>
-        MedOS Limited <Badge>Co-founder</Badge>
+        MedOS Limited <Badge>Co-founder and CTO</Badge>
       </Title>
       <P>
         A medical AI startup building clinical AI products, including agents
@@ -18,7 +18,7 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Role</Meta>
-          <span>Co-founder</span>
+          <span>Co-founder and CTO</span>
         </ListItem>
         <ListItem>
           <Meta>Products</Meta>
