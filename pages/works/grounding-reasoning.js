@@ -8,6 +8,7 @@ import {
   Box,
   Image,
   Text,
+  SimpleGrid,
   useColorModeValue
 } from '@chakra-ui/react'
 import { Title, WorkImage } from '../../components/work'
@@ -19,50 +20,64 @@ import publications from '../../lib/publications'
 import thumb from '../../public/images/works/grounding_eyecatch.png'
 import hmsLogo from '../../public/images/logos/hms.svg'
 import hmsLogoDark from '../../public/images/logos/hms-dark.svg'
+import jhuLogo from '../../public/images/logos/jhu.svg'
+import jhuLogoDark from '../../public/images/logos/jhu-dark.svg'
 
 const papers = publications.filter(p =>
   (p.projects || []).includes('grounding-reasoning')
 )
 
-const HmsCollaboration = () => (
-  <Box
-    display={{ md: 'flex' }}
-    alignItems="center"
-    gap={6}
-    p={4}
-    borderRadius="lg"
-    bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
-  >
-    <Link
-      href="https://rajpurkarlab.hms.harvard.edu/"
-      target="_blank"
-      flexShrink={0}
-      display="block"
-      mb={{ base: 3, md: 0 }}
-    >
-      <Image
-        src={useColorModeValue(hmsLogo.src, hmsLogoDark.src)}
-        alt="Harvard Medical School"
-        w="180px"
-      />
-    </Link>
-    <Box>
-      <Text fontWeight="bold">
-        <Link href="https://www.pranavrajpurkar.com/" target="_blank">
-          Prof. Pranav Rajpurkar
-        </Link>
-      </Text>
-      <Text fontSize="sm">
-        Associate Professor of Biomedical Informatics, Harvard Medical School
-      </Text>
-      <Text fontSize="sm">
+const collaborations = [
+  {
+    logo: [hmsLogo, hmsLogoDark],
+    logoAlt: 'Harvard Medical School',
+    logoHref: 'https://rajpurkarlab.hms.harvard.edu/',
+    name: 'Prof. Pranav Rajpurkar',
+    href: 'https://www.pranavrajpurkar.com/',
+    title:
+      'Associate Professor of Biomedical Informatics, Harvard Medical School',
+    detail: (
+      <>
         <Link href="https://rajpurkarlab.hms.harvard.edu/" target="_blank">
           Rajpurkar Lab
         </Link>
         , Department of Biomedical Informatics: medical AI for complex clinical
         work
-      </Text>
-    </Box>
+      </>
+    )
+  },
+  {
+    logo: [jhuLogo, jhuLogoDark],
+    logoAlt: 'Johns Hopkins University',
+    logoHref: 'https://www.cs.jhu.edu/faculty/zongwei-zhou/',
+    name: 'Prof. Zongwei Zhou',
+    href: 'https://www.zongweiz.com/',
+    title: 'Assistant Professor of Computer Science, Johns Hopkins University',
+    detail: 'Joint appointment in Oncology, Johns Hopkins School of Medicine'
+  }
+]
+
+const Collaboration = ({ c }) => (
+  <Box
+    p={4}
+    borderRadius="lg"
+    bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
+  >
+    <Link href={c.logoHref} target="_blank" display="block" mb={3}>
+      <Image
+        src={useColorModeValue(c.logo[0].src, c.logo[1].src)}
+        alt={c.logoAlt}
+        h="40px"
+        w="auto"
+      />
+    </Link>
+    <Text fontWeight="bold">
+      <Link href={c.href} target="_blank">
+        {c.name}
+      </Link>
+    </Text>
+    <Text fontSize="sm">{c.title}</Text>
+    <Text fontSize="sm">{c.detail}</Text>
   </Box>
 )
 
@@ -115,7 +130,11 @@ const Work = () => (
         <Heading as="h3" variant="section-title">
           Collaborations
         </Heading>
-        <HmsCollaboration />
+        <SimpleGrid columns={[1, 1, 2]} gap={4}>
+          {collaborations.map(c => (
+            <Collaboration key={c.name} c={c} />
+          ))}
+        </SimpleGrid>
       </Section>
 
       <Section delay={0.1}>
