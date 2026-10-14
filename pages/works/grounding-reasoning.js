@@ -5,12 +5,13 @@ import {
   OrderedList,
   ListItem
 } from '@chakra-ui/react'
-import { Title } from '../../components/work'
+import { Title, WorkImage } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import Publication from '../../components/publication'
 import publications from '../../lib/publications'
+import thumb from '../../public/images/works/grounding_eyecatch.png'
 
 const papers = publications.filter(p =>
   (p.projects || []).includes('grounding-reasoning')
@@ -22,6 +23,10 @@ const Work = () => (
       <Title>
         Grounding and Reasoning <Badge>Research</Badge>
       </Title>
+      <WorkImage
+        src={thumb.src}
+        alt="A chest X-ray with three numbered evidence boxes beside a chat answer whose citations point to those boxes"
+      />
       <P>
         Vision-language models answer questions about medical images in fluent,
         confident language. That confidence is the problem: a model sounds just
