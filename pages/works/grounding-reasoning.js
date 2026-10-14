@@ -3,7 +3,8 @@ import {
   Badge,
   Heading,
   OrderedList,
-  ListItem
+  ListItem,
+  Link
 } from '@chakra-ui/react'
 import { Title, WorkImage } from '../../components/work'
 import P from '../../components/paragraph'
@@ -60,6 +61,14 @@ const Work = () => (
         multimodal imaging, one place to analyse and automate more than 15 tasks
         across medical imaging and analysis, built on models whose answers can
         be traced to their evidence.
+      </P>
+      <P style={{ textIndent: 0 }}>
+        Interleaved grounded reasoning for general medical image understanding
+        is pursued in collaboration with{' '}
+        <Link href="https://www.pranavrajpurkar.com/" target="_blank">
+          Prof. Pranav Rajpurkar
+        </Link>
+        &apos;s lab at Harvard Medical School.
       </P>
 
       <Section delay={0.1}>

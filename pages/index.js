@@ -104,9 +104,21 @@ const Home = () => (
           <Link as={NextLink} href="/works/medos/" scroll={false}>
             MedOS Limited
           </Link>
-          . His research has three threads: grounding and reasoning in
-          multimodal LLMs, so that a model&apos;s answers can be traced back to
-          the evidence it was given; watermarking AI-generated content; and
+          . He also collaborates with{' '}
+          <Link href="https://www.pranavrajpurkar.com/" target="_blank">
+            Prof. Pranav Rajpurkar
+          </Link>{' '}
+          at Harvard Medical School on interleaved grounded reasoning with
+          vision-language models for general medical image understanding, and
+          with{' '}
+          <Link href="https://www.zongweiz.com/" target="_blank">
+            Prof. Zongwei Zhou
+          </Link>{' '}
+          at Johns Hopkins University on evaluating 3D segmentation methods and
+          on weakly supervised pretraining for promptable and interactive
+          segmentation. His research has three threads: grounding and reasoning
+          in multimodal LLMs, so that a model&apos;s answers can be traced back
+          to the evidence it was given; watermarking AI-generated content; and
           digital twins. Much of his published work applies these ideas to
           medical imaging. Before the PhD he was an AI Researcher at GE
           Healthcare India.
@@ -140,14 +152,8 @@ const Home = () => (
           News
         </Heading>
         <List styleType="disc" pl={5} spacing={1}>
-          {news.map(({ count, venue, href, place }) => (
-            <ListItem key={venue}>
-              {count} accepted at{' '}
-              <Link href={href} target="_blank">
-                {venue}
-              </Link>
-              , {place}
-            </ListItem>
+          {news.map(({ id, body }) => (
+            <ListItem key={id}>{body}</ListItem>
           ))}
         </List>
       </Section>
@@ -163,6 +169,14 @@ const Home = () => (
         <BioSection>
           <BioYear>2026 to present</BioYear>
           Co-founder and CTO, MedOS Limited
+        </BioSection>
+        <BioSection>
+          <BioYear>2026 to present</BioYear>
+          Research collaboration, Harvard Medical School
+        </BioSection>
+        <BioSection>
+          <BioYear>2026 to present</BioYear>
+          Research collaboration, Johns Hopkins University
         </BioSection>
         <BioSection>
           <BioYear>Prior</BioYear>
