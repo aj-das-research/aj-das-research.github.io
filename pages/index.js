@@ -83,8 +83,21 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Abhijit is a PhD student in Machine Learning at MBZUAI in Abu Dhabi,
-          supervised by Prof. Imran Razzak and Prof. Nils Lukas, and co-founder
-          and CTO of{' '}
+          supervised by{' '}
+          <Link
+            href="https://scholar.google.com/citations?user=GlXI4N8AAAAJ&hl=en"
+            target="_blank"
+          >
+            Prof. Imran Razzak
+          </Link>{' '}
+          and{' '}
+          <Link
+            href="https://scholar.google.com/citations?user=fmlEab4AAAAJ&hl=en"
+            target="_blank"
+          >
+            Prof. Nils Lukas
+          </Link>
+          , and co-founder and CTO of{' '}
           <Link as={NextLink} href="/works/medos/" scroll={false}>
             MedOS Limited
           </Link>
