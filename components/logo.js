@@ -9,6 +9,7 @@ const LogoBox = styled.span`
   font-size: 18px;
   display: inline-flex;
   align-items: center;
+  gap: 12px;
   height: 30px;
   line-height: 20px;
   padding: 10px;
@@ -31,9 +32,8 @@ const Logo = () => {
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily='M PLUS Rounded 1c", sans-serif'
           fontWeight="bold"
-          ml={3}
         >
-          {site.name}
+          {site.shortName}
         </Text>
       </LogoBox>
     </Link>
