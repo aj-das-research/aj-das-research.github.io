@@ -6,7 +6,7 @@ The source image is labelled a normal PA radiograph on Wikimedia Commons; the an
 only restates that, citing the regions it rests on."""
 import sys
 out = sys.argv[1]
-PX, PY, PW, PH = 60, 40, 359, 380
+PX, PY, PW, PH = 60, 55, 491, 520
 TEAL, PINK, AMBER = "#88ccca", "#ff63c3", "#f2b84b"
 REG = [("1", TEAL, (0.44, 0.56, 0.00, 0.27)),   # trachea
        ("2", PINK, (0.32, 0.79, 0.45, 0.89)),   # cardiac silhouette
@@ -24,15 +24,15 @@ body{{background:linear-gradient(180deg,#1a2530,#0e151d);font-family:Helvetica,A
 .xr{{position:absolute;left:{PX}px;top:{PY}px;width:{PW}px;height:{PH}px;border-radius:12px;overflow:visible;box-shadow:0 0 0 2px #2c3a45}}
 .xr img{{width:100%;height:100%;display:block;border-radius:12px}}
 .bx{{position:absolute;border:3.5px solid;border-radius:6px}}
-.tag{{position:absolute;left:-13px;top:-13px;width:26px;height:26px;border-radius:50%;color:#14191f;font:700 15px Helvetica,Arial,sans-serif;display:flex;align-items:center;justify-content:center}}
-.chat{{position:absolute;left:470px;top:{PY}px;width:670px;height:{PH}px;border-radius:14px;background:#1c2731;box-shadow:0 0 0 2px #2c3a45;
-      padding:26px 28px;display:flex;flex-direction:column;justify-content:space-between}}
-.q{{align-self:flex-end;background:#2f3f4c;color:#f7f3ea;border-radius:18px 18px 4px 18px;padding:12px 18px;font-size:23px}}
+.tag{{position:absolute;left:-15px;top:-15px;width:30px;height:30px;border-radius:50%;color:#14191f;font:700 17px Helvetica,Arial,sans-serif;display:flex;align-items:center;justify-content:center}}
+.chat{{position:absolute;left:{PX+PW+44}px;top:{PY}px;width:{1140-(PX+PW+44)}px;height:{PH}px;border-radius:14px;background:#1c2731;box-shadow:0 0 0 2px #2c3a45;
+      padding:30px 30px;display:flex;flex-direction:column;justify-content:center;gap:34px}}
+.q{{align-self:flex-end;background:#2f3f4c;color:#f7f3ea;border-radius:18px 18px 4px 18px;padding:13px 20px;font-size:25px}}
 .think{{border-left:3px solid #3b4c59;padding:2px 0 2px 16px;display:flex;flex-direction:column;gap:10px}}
-.th{{font:600 18px Menlo,monospace;color:#8b9aa6;letter-spacing:.3px}}
-.st{{display:flex;align-items:center;gap:10px;font-size:20px;color:#a9b5bf}}
+.th{{font:600 19px Menlo,monospace;color:#8b9aa6;letter-spacing:.3px}}
+.st{{display:flex;align-items:center;gap:10px;font-size:21px;color:#a9b5bf}}
 .st .ar{{color:#5d6d79}}
-.ans{{font-size:23px;line-height:1.5;color:#f2efe8}}
+.ans{{font-size:25px;line-height:1.5;color:#f2efe8}}
 .ans b{{color:#fff}}
 .cite{{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;
        color:#14191f;font:700 14px Helvetica,Arial,sans-serif;vertical-align:3px;margin-left:4px}}
@@ -51,5 +51,5 @@ p.sub{{position:absolute;left:72px;bottom:56px;margin:0;color:#e6e6e6;font:26px 
   <div class="ans"><b>Normal study.</b> The trachea is midline{chip('1', C['1'])}, the heart size is within
     normal limits{chip('2', C['2'])} and the left costophrenic angle is sharp{chip('3', C['3'])}.</div>
 </div>
-<h1>Grounding &amp; Reasoning</h1><p class="sub">in multimodal LLMs</p>"""
+"""
 open(out, "w").write(html)
