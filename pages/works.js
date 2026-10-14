@@ -21,27 +21,21 @@ const Works = () => (
             id="grounding-reasoning"
             title="Grounding and Reasoning"
             thumbnail={thumbGrounding}
-          >
-            Grounding and reasoning in multimodal LLMs
-          </WorkGridItem>
+          />
         </Section>
         <Section>
           <WorkGridItem
             id="watermarking"
             title="Watermarking"
             thumbnail={thumbWatermarking}
-          >
-            Watermarking AI-generated content
-          </WorkGridItem>
+          />
         </Section>
         <Section delay={0.1}>
           <WorkGridItem
             id="digital-twins"
             title="Digital Twins"
             thumbnail={thumbDigitalTwins}
-          >
-            Virtual counterparts of real systems
-          </WorkGridItem>
+          />
         </Section>
       </SimpleGrid>
 

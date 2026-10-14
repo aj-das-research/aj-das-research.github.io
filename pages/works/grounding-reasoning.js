@@ -43,8 +43,8 @@ const Work = () => (
         </ListItem>
         <ListItem>
           How can grounding in the image be interleaved with a model&apos;s
-          free-text reasoning, so that each reasoning step points to the
-          evidence behind it?
+          free-text reasoning, so each reasoning step points to the evidence
+          behind it?
         </ListItem>
         <ListItem>
           Can a model tell, at test time and without labels, that an input lies
