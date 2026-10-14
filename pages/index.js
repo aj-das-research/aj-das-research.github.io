@@ -108,19 +108,15 @@ const Home = () => (
           <Link href="https://www.pranavrajpurkar.com/" target="_blank">
             Prof. Pranav Rajpurkar
           </Link>{' '}
-          at Harvard Medical School on interleaved grounded reasoning with
-          vision-language models for general medical image understanding, and
-          with{' '}
+          at Harvard Medical School and{' '}
           <Link href="https://www.zongweiz.com/" target="_blank">
             Prof. Zongwei Zhou
           </Link>{' '}
-          at Johns Hopkins University on evaluating 3D segmentation methods and
-          on weakly supervised pretraining for promptable and interactive
-          segmentation. His research has three threads: grounding and reasoning
-          in multimodal LLMs, so that a model&apos;s answers can be traced back
-          to the evidence it was given; watermarking AI-generated content; and
-          digital twins. Much of his published work applies these ideas to
-          medical imaging. Before the PhD he was an AI Researcher at GE
+          at Johns Hopkins University. His research has three threads: grounding
+          and reasoning in multimodal LLMs, so that a model&apos;s answers can
+          be traced back to the evidence it was given; watermarking AI-generated
+          content; and digital twins. Much of his published work applies these
+          ideas to medical imaging. Before the PhD he was an AI Researcher at GE
           Healthcare India.
         </Paragraph>
         <Box align="center" my={4}>
