@@ -1,19 +1,10 @@
-import {
-  Container,
-  Badge,
-  Heading,
-  Box,
-  Image,
-  Text,
-  Link
-} from '@chakra-ui/react'
+import { Container, Badge, Heading } from '@chakra-ui/react'
 import { Title } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import Publication from '../../components/publication'
 import publications from '../../lib/publications'
-import teaser from '../../public/images/works/grounding_teaser.svg'
 
 const papers = publications.filter(p =>
   (p.projects || []).includes('grounding-reasoning')
@@ -43,32 +34,6 @@ const Work = () => (
       </P>
 
       <Section delay={0.1}>
-        <Box my={6}>
-          <Link href={teaser.src} target="_blank">
-            <Image
-              src={teaser.src}
-              alt="PROTON: covariate-shifted images get the same MCM score as in-distribution ones but separate in embedding space; PROTON raises AUROC across shift types and three medical VLMs."
-              w="full"
-              borderRadius="lg"
-            />
-          </Link>
-          <Text fontSize="sm" mt={2} opacity={0.8}>
-            <b>
-              Reading the embedding space catches inputs the softmax misses.
-            </b>{' '}
-            (a) Covariate-shifted fundus images get the same MCM score as
-            in-distribution ones (illustration) but sit apart in the VLM
-            embedding. (b) PROTON builds class prototypes online from confident
-            test predictions and mixes prototype distance with MCM. (c) It is
-            the best zero-shot score needing no extra prompts or labels; MCM
-            with hierarchical prompts stays ahead on semantic and covariate
-            shift. (d) The gain carries to radiology and pathology VLMs. Numbers
-            from the PROTON paper (MICCAI 2026).
-          </Text>
-        </Box>
-      </Section>
-
-      <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Publications
         </Heading>
