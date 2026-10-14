@@ -31,7 +31,7 @@ const Work = () => (
         project asks how to make the answers of multimodal LLMs traceable to the
         evidence they were given. Four questions guide it:
       </P>
-      <OrderedList spacing={0.5} my={3} pl={2}>
+      <OrderedList spacing={0.5} my={3} pl={10}>
         <ListItem>
           Where inside a vision-language model does visual evidence enter the
           answer, and where does it get lost?

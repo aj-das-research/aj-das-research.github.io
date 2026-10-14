@@ -1,49 +1,55 @@
+"""Grounding & Reasoning thumbnail (1200x630).
+Left: CC0 chest radiograph with numbered evidence boxes.
+Right: chat transcript - question, thinking steps that locate evidence, answer with
+Perplexity-style citation chips whose numbers and colours match the boxes.
+The source image is labelled a normal PA radiograph on Wikimedia Commons; the answer
+only restates that, citing the regions it rests on."""
 import sys
 out = sys.argv[1]
-# X-ray panel geometry (image is 1700x1800 crop -> 300x318)
 PX, PY, PW, PH = 60, 40, 359, 380
-def box(fx0, fx1, fy0, fy1):
-    return PX + fx0 * PW, PY + fy0 * PH, (fx1 - fx0) * PW, (fy1 - fy0) * PH
 TEAL, PINK, AMBER = "#88ccca", "#ff63c3", "#f2b84b"
-regions = [  # fractions of the crop, read off the radiograph
-    ("1", TEAL,  box(0.44, 0.56, 0.00, 0.27)),   # trachea
-    ("2", PINK,  box(0.32, 0.79, 0.45, 0.89)),   # cardiac silhouette
-    ("3", AMBER, box(0.85, 0.99, 0.84, 0.99)),   # left costophrenic angle
-]
-steps = [("1", TEAL, "Trace the trachea along the midline"),
-         ("2", PINK, "Measure the cardiac silhouette"),
-         ("3", AMBER, "Inspect the left costophrenic angle")]
-svg = []
-for n, c, (x, y, w, h) in regions:
-    svg.append(f'<rect x="{x:.0f}" y="{y:.0f}" width="{w:.0f}" height="{h:.0f}" rx="6" fill="{c}" fill-opacity=".14" stroke="{c}" stroke-width="3.5"/>')
-    svg.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="13" fill="{c}"/><text x="{x:.0f}" y="{y+5:.0f}" font-size="15" font-weight="700" text-anchor="middle" fill="#14191f">{n}</text>')
-# reasoning card
-CX, CY, CW = 500, 40, 640
-rows_y = [150, 240, 330]
-for (n, c, s), ry, (_, _, (x, y, w, h)) in zip(steps, rows_y, regions):
-    # connector from region box right edge to step chip
-    sx, sy = x + w, y + h / 2
-    svg.append(f'<path d="M{sx:.0f} {sy:.0f} C {CX-40} {sy:.0f}, {CX-60} {ry}, {CX+28} {ry}" fill="none" stroke="{c}" stroke-width="2.5" stroke-dasharray="7 6" opacity=".9"/>')
-svg = "".join(svg)
-step_html = "".join(f'''<div class="step" style="top:{ry-24}px"><span class="chip" style="background:{c}">{n}</span><span class="txt">{s}</span><span class="ref" style="color:{c}">&lt;box {n}&gt;</span></div>''' for (n, c, s), ry in zip(steps, rows_y))
+REG = [("1", TEAL, (0.44, 0.56, 0.00, 0.27)),   # trachea
+       ("2", PINK, (0.32, 0.79, 0.45, 0.89)),   # cardiac silhouette
+       ("3", AMBER, (0.85, 0.99, 0.84, 0.99))]  # left costophrenic angle
+boxes = "".join(
+    f'<div class="bx" style="left:{x0*100}%;top:{y0*100}%;width:{(x1-x0)*100}%;height:{(y1-y0)*100}%;'
+    f'border-color:{c};background:{c}22"><span class="tag" style="background:{c}">{n}</span></div>'
+    for n, c, (x0, x1, y0, y1) in REG)
+chip = lambda n, c: f'<span class="cite" style="background:{c}">{n}</span>'
+C = {n: c for n, c, _ in REG}
 html = f"""<!doctype html><meta charset=utf-8><style>
+*{{box-sizing:border-box}}
 html,body{{margin:0;width:1200px;height:630px;overflow:hidden}}
-body{{background:linear-gradient(180deg,#1a2530,#0e151d);font-family:'DejaVu Sans',Verdana,sans-serif;position:relative;color:#e6e6e6}}
-.xr{{position:absolute;left:{PX}px;top:{PY}px;width:{PW}px;height:{PH}px;border-radius:12px;box-shadow:0 0 0 2px #2c3a45}}
-svg{{position:absolute;left:0;top:0}}
-.card{{position:absolute;left:{CX}px;top:{CY}px;width:{CW}px;height:{PH}px;border-radius:14px;background:#1f2b36;box-shadow:0 0 0 2px #2c3a45}}
-.head{{position:absolute;left:{CX+28}px;top:{CY+22}px;font:20px Menlo,monospace;color:#8b9aa6}}
-.step{{position:absolute;left:{CX+28}px;height:48px;display:flex;align-items:center;gap:14px;font-size:22px}}
-.chip{{width:28px;height:28px;border-radius:50%;color:#14191f;font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center}}
-.ref{{font:19px Menlo,monospace}}
-.ans{{position:absolute;left:{CX+28}px;top:{CY+356}px;font-size:22px;color:#f7f3ea}}
-.ans b{{color:#88ccca}}
-h1{{position:absolute;left:70px;bottom:92px;margin:0;color:#f7f3ea;font-size:60px;font-weight:700;letter-spacing:-.5px}}
-p{{position:absolute;left:72px;bottom:56px;margin:0;color:#e6e6e6;font:26px Menlo,monospace}}
+body{{background:linear-gradient(180deg,#1a2530,#0e151d);font-family:Helvetica,Arial,sans-serif;color:#e6e6e6;position:relative}}
+.xr{{position:absolute;left:{PX}px;top:{PY}px;width:{PW}px;height:{PH}px;border-radius:12px;overflow:visible;box-shadow:0 0 0 2px #2c3a45}}
+.xr img{{width:100%;height:100%;display:block;border-radius:12px}}
+.bx{{position:absolute;border:3.5px solid;border-radius:6px}}
+.tag{{position:absolute;left:-13px;top:-13px;width:26px;height:26px;border-radius:50%;color:#14191f;font:700 15px Helvetica,Arial,sans-serif;display:flex;align-items:center;justify-content:center}}
+.chat{{position:absolute;left:470px;top:{PY}px;width:670px;height:{PH}px;border-radius:14px;background:#1c2731;box-shadow:0 0 0 2px #2c3a45;
+      padding:26px 28px;display:flex;flex-direction:column;justify-content:space-between}}
+.q{{align-self:flex-end;background:#2f3f4c;color:#f7f3ea;border-radius:18px 18px 4px 18px;padding:12px 18px;font-size:23px}}
+.think{{border-left:3px solid #3b4c59;padding:2px 0 2px 16px;display:flex;flex-direction:column;gap:10px}}
+.th{{font:600 18px Menlo,monospace;color:#8b9aa6;letter-spacing:.3px}}
+.st{{display:flex;align-items:center;gap:10px;font-size:20px;color:#a9b5bf}}
+.st .ar{{color:#5d6d79}}
+.ans{{font-size:23px;line-height:1.5;color:#f2efe8}}
+.ans b{{color:#fff}}
+.cite{{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;
+       color:#14191f;font:700 14px Helvetica,Arial,sans-serif;vertical-align:3px;margin-left:4px}}
+h1{{position:absolute;left:70px;bottom:92px;margin:0;font-family:Verdana,'DejaVu Sans',sans-serif;color:#f7f3ea;font-size:60px;font-weight:700;letter-spacing:-.5px}}
+p.sub{{position:absolute;left:72px;bottom:56px;margin:0;color:#e6e6e6;font:26px Menlo,monospace}}
 </style>
-<img class=xr src="cxr.jpg"><div class=card></div><div class=head>reasoning trace</div>
-{step_html}
-<div class=ans>answer &larr; <b>grounded in boxes 1&ndash;3</b></div>
-<svg width=1200 height=630 font-family="DejaVu Sans,Verdana,sans-serif">{svg}</svg>
-<h1>Grounding &amp; Reasoning</h1><p>in multimodal LLMs</p>"""
+<div class="xr"><img src="cxr.jpg">{boxes}</div>
+<div class="chat">
+  <div class="q">Is this chest X-ray normal?</div>
+  <div class="think">
+    <div class="th">&#9662; Thinking &middot; locating evidence</div>
+    <div class="st">trace the trachea <span class="ar">&rarr;</span>{chip('1', C['1'])}</div>
+    <div class="st">measure the cardiac silhouette <span class="ar">&rarr;</span>{chip('2', C['2'])}</div>
+    <div class="st">check the left costophrenic angle <span class="ar">&rarr;</span>{chip('3', C['3'])}</div>
+  </div>
+  <div class="ans"><b>Normal study.</b> The trachea is midline{chip('1', C['1'])}, the heart size is within
+    normal limits{chip('2', C['2'])} and the left costophrenic angle is sharp{chip('3', C['3'])}.</div>
+</div>
+<h1>Grounding &amp; Reasoning</h1><p class="sub">in multimodal LLMs</p>"""
 open(out, "w").write(html)
