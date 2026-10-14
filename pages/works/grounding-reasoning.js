@@ -50,7 +50,7 @@ const Work = () => (
           previously unseen labels, without being taken out of service?
         </ListItem>
       </OrderedList>
-      <P>
+      <P style={{ textIndent: 0 }}>
         We are building towards the first co-working space for medical
         multimodal imaging, one place to analyse and automate more than 15 tasks
         across medical imaging and analysis, built on models whose answers can
