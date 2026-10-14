@@ -19,14 +19,14 @@ const Works = () => (
         <Section>
           <WorkGridItem
             id="grounding-reasoning"
-            title="Grounding and Reasoning"
+            title="Grounding and Reasoning in Multimodal LLMs"
             thumbnail={thumbGrounding}
           />
         </Section>
         <Section>
           <WorkGridItem
             id="watermarking"
-            title="Watermarking"
+            title="Watermarking AI Generated Content"
             thumbnail={thumbWatermarking}
           />
         </Section>
