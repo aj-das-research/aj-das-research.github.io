@@ -164,15 +164,27 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2026 to present</BioYear>
-          Co-founder and CTO, MedOS Limited
+          Co-founder and CTO,{' '}
+          <Link href="https://medos.tech/" target="_blank">
+            MedOS Limited
+          </Link>
+          , UAE
         </BioSection>
         <BioSection>
           <BioYear>2026 to present</BioYear>
-          Research collaboration, Harvard Medical School
+          Research collaboration with{' '}
+          <Link href="https://www.pranavrajpurkar.com/" target="_blank">
+            Prof. Pranav Rajpurkar
+          </Link>
+          , HMS
         </BioSection>
         <BioSection>
           <BioYear>2026 to present</BioYear>
-          Research collaboration, Johns Hopkins University
+          Research collaboration with{' '}
+          <Link href="https://www.zongweiz.com/" target="_blank">
+            Prof. Zongwei Zhou
+          </Link>
+          , JHU
         </BioSection>
         <BioSection>
           <BioYear>Prior</BioYear>
