@@ -21,10 +21,12 @@ import {
   IoLogoLinkedin,
   IoSchool,
   IoMail,
-  IoCube
+  IoCube,
+  IoDocumentText
 } from 'react-icons/io5'
 import Image from 'next/image'
 import site from '../lib/site'
+import news from '../lib/news'
 import profileImage from '../public/images/profile.jpg'
 
 const interests = [
@@ -34,6 +36,7 @@ const interests = [
 ]
 
 const webLinks = [
+  { href: site.links.cv, icon: <IoDocumentText />, label: 'CV' },
   { href: site.links.github, icon: <IoLogoGithub />, label: 'GitHub' },
   { href: site.links.scholar, icon: <IoSchool />, label: 'Google Scholar' },
   { href: site.links.linkedin, icon: <IoLogoLinkedin />, label: 'LinkedIn' },
@@ -130,6 +133,23 @@ const Home = () => (
             Projects
           </Button>
         </Box>
+      </Section>
+
+      <Section delay={0.15}>
+        <Heading as="h3" variant="section-title">
+          News
+        </Heading>
+        <List styleType="disc" pl={5} spacing={1}>
+          {news.map(({ count, venue, href, place }) => (
+            <ListItem key={venue}>
+              {count} accepted at{' '}
+              <Link href={href} target="_blank">
+                {venue}
+              </Link>
+              , {place}
+            </ListItem>
+          ))}
+        </List>
       </Section>
 
       <Section delay={0.2}>
