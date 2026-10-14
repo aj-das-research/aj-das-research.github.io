@@ -26,7 +26,8 @@ const Work = () => (
       <P>
         MedOS Limited builds medical agentic AI solutions: AI systems that take
         on complete clinical workflows rather than single prediction tasks, with
-        clinicians kept in control. It has two products.
+        clinicians kept in control. It is building two products, launching in
+        January 2027.
       </P>
 
       <Product name="AI PACS" tagline="Radiology reporting">
@@ -51,7 +52,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Products</Meta>
-          <span>AI PACS, ANAMORA</span>
+          <span>AI PACS, ANAMORA (in development, launching January 2027)</span>
         </ListItem>
       </List>
     </Container>
