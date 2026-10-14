@@ -4,7 +4,11 @@ import {
   Heading,
   OrderedList,
   ListItem,
-  Link
+  Link,
+  Box,
+  Image,
+  Text,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { Title, WorkImage } from '../../components/work'
 import P from '../../components/paragraph'
@@ -13,9 +17,57 @@ import Section from '../../components/section'
 import Publication from '../../components/publication'
 import publications from '../../lib/publications'
 import thumb from '../../public/images/works/grounding_eyecatch.png'
+import hmsLogo from '../../public/images/logos/hms.svg'
+import hmsLogoDark from '../../public/images/logos/hms-dark.svg'
 
 const papers = publications.filter(p =>
   (p.projects || []).includes('grounding-reasoning')
+)
+
+const HmsCollaboration = () => (
+  <Box
+    display={{ md: 'flex' }}
+    alignItems="center"
+    gap={6}
+    p={4}
+    borderRadius="lg"
+    bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
+  >
+    <Link
+      href="https://rajpurkarlab.hms.harvard.edu/"
+      target="_blank"
+      flexShrink={0}
+      display="block"
+      mb={{ base: 3, md: 0 }}
+    >
+      <Image
+        src={useColorModeValue(hmsLogo.src, hmsLogoDark.src)}
+        alt="Harvard Medical School"
+        w="180px"
+      />
+    </Link>
+    <Box>
+      <Text fontWeight="bold">
+        <Link href="https://www.pranavrajpurkar.com/" target="_blank">
+          Prof. Pranav Rajpurkar
+        </Link>
+      </Text>
+      <Text fontSize="sm">
+        Associate Professor of Biomedical Informatics, Harvard Medical School
+      </Text>
+      <Text fontSize="sm">
+        <Link href="https://rajpurkarlab.hms.harvard.edu/" target="_blank">
+          Rajpurkar Lab
+        </Link>
+        , Department of Biomedical Informatics: medical AI for complex clinical
+        work
+      </Text>
+      <Text fontSize="sm" mt={2}>
+        Focus: interleaved grounded reasoning with vision-language models for
+        general medical image understanding.
+      </Text>
+    </Box>
+  </Box>
 )
 
 const Work = () => (
@@ -62,14 +114,13 @@ const Work = () => (
         across medical imaging and analysis, built on models whose answers can
         be traced to their evidence.
       </P>
-      <P style={{ textIndent: 0 }}>
-        Interleaved grounded reasoning for general medical image understanding
-        is pursued in collaboration with{' '}
-        <Link href="https://www.pranavrajpurkar.com/" target="_blank">
-          Prof. Pranav Rajpurkar
-        </Link>
-        &apos;s lab at Harvard Medical School.
-      </P>
+
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Collaborations
+        </Heading>
+        <HmsCollaboration />
+      </Section>
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
