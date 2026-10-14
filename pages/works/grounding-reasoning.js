@@ -1,7 +1,12 @@
-import { Container, Badge, Heading } from '@chakra-ui/react'
+import {
+  Container,
+  Badge,
+  Heading,
+  OrderedList,
+  ListItem
+} from '@chakra-ui/react'
 import { Title } from '../../components/work'
 import P from '../../components/paragraph'
-import Mark from '../../components/mark'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import Publication from '../../components/publication'
@@ -22,24 +27,34 @@ const Work = () => (
         confident language. That confidence is the problem: a model sounds just
         as certain whether or not its answer rests on visual evidence it has
         actually seen and can handle. In medicine, a confident answer about an
-        image the model does not understand is{' '}
-        <Mark>worse than no answer at all</Mark>.
+        image the model does not understand is worse than no answer at all. This
+        project asks how to make the answers of multimodal LLMs traceable to the
+        evidence they were given. Four questions guide it:
       </P>
+      <OrderedList spacing={2} my={4} pl={2}>
+        <ListItem>
+          Where inside a vision-language model does visual evidence enter the
+          answer, and where does it get lost?
+        </ListItem>
+        <ListItem>
+          How can grounding in the image be interleaved with a model&apos;s
+          free-text reasoning, so that each reasoning step points to the
+          evidence behind it?
+        </ListItem>
+        <ListItem>
+          Can a model tell, at test time and without labels, that an input lies
+          outside what it can reason about?
+        </ListItem>
+        <ListItem>
+          Can a deployed model adapt at test time to new visual features and
+          previously unseen labels, without being taken out of service?
+        </ListItem>
+      </OrderedList>
       <P>
-        This project asks how to make the answers of multimodal LLMs{' '}
-        <Mark>traceable to the evidence they were given</Mark>. Four questions
-        guide it. Where inside a vision-language model does visual evidence
-        enter the answer, and <Mark>where does it get lost</Mark>? How can
-        grounding in the image be interleaved with a model&apos;s free-text
-        reasoning, so that{' '}
-        <Mark>each reasoning step points to the evidence behind it</Mark>? Can a
-        model tell, at test time and without labels, that an input{' '}
-        <Mark>lies outside what it can reason about</Mark>? And can a deployed
-        model{' '}
-        <Mark>
-          adapt at test time to new visual features and previously unseen labels
-        </Mark>
-        , without being taken out of service?
+        Where this leads: we are building towards the first co-working space for
+        medical multimodal imaging, one place to analyse and automate more than
+        15 tasks across medical imaging and analysis, built on models whose
+        answers can be traced to their evidence.
       </P>
 
       <Section delay={0.1}>
