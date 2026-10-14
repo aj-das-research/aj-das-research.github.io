@@ -59,7 +59,7 @@ const Work = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Publications
+          Related Publications
         </Heading>
         {papers.map(p => (
           <Publication key={p.title} p={p} />
