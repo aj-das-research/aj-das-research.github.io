@@ -62,10 +62,6 @@ const HmsCollaboration = () => (
         , Department of Biomedical Informatics: medical AI for complex clinical
         work
       </Text>
-      <Text fontSize="sm" mt={2}>
-        Focus: interleaved grounded reasoning with vision-language models for
-        general medical image understanding.
-      </Text>
     </Box>
   </Box>
 )
