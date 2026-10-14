@@ -31,7 +31,7 @@ const Work = () => (
         project asks how to make the answers of multimodal LLMs traceable to the
         evidence they were given. Four questions guide it:
       </P>
-      <OrderedList spacing={2} my={4} pl={2}>
+      <OrderedList spacing={0.5} my={3} pl={2}>
         <ListItem>
           Where inside a vision-language model does visual evidence enter the
           answer, and where does it get lost?
@@ -51,10 +51,10 @@ const Work = () => (
         </ListItem>
       </OrderedList>
       <P>
-        Where this leads: we are building towards the first co-working space for
-        medical multimodal imaging, one place to analyse and automate more than
-        15 tasks across medical imaging and analysis, built on models whose
-        answers can be traced to their evidence.
+        We are building towards the first co-working space for medical
+        multimodal imaging, one place to analyse and automate more than 15 tasks
+        across medical imaging and analysis, built on models whose answers can
+        be traced to their evidence.
       </P>
 
       <Section delay={0.1}>

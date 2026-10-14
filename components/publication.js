@@ -19,12 +19,19 @@ const Publication = ({ p }) => (
   <Box mb={6}>
     <Text fontWeight="bold">{p.title}</Text>
     <Text fontSize="sm">
-      {p.authors.split(site.name).map((part, i) => (
-        <span key={i}>
-          {i > 0 && <b>{site.name}</b>}
-          {part}
+      {p.authors.split(', ').map((name, i) => (
+        <span key={name}>
+          {i > 0 && ', '}
+          {name === site.name ? <b>{name}</b> : name}
+          {(p.equal || []).includes(name) && '*'}
         </span>
       ))}
+      {p.equal && (
+        <Text as="span" opacity={0.7}>
+          {' '}
+          (*equal contribution)
+        </Text>
+      )}
     </Text>
     <HStack spacing={2} mt={1}>
       <Badge colorScheme="teal">{p.venue}</Badge>
