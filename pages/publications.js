@@ -30,9 +30,11 @@ const Publications = () => (
 
       <Section delay={0.1}>
         <Box mt={6}>
-          {publications.map(p => (
-            <Publication key={p.title} p={p} />
-          ))}
+          {publications
+            .filter(p => p.highlight !== false)
+            .map(p => (
+              <Publication key={p.title} p={p} />
+            ))}
         </Box>
       </Section>
     </Container>
