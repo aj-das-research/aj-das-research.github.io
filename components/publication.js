@@ -4,7 +4,7 @@ import Video from './video'
 import site from '../lib/site'
 
 const LinkList = ({ links }) => (
-  <HStack spacing={3} mt={1}>
+  <HStack spacing={3} mt={1} flexWrap="wrap" rowGap={1}>
     {Object.entries(links || {})
       .filter(([, href]) => href)
       .map(([label, href]) => (
