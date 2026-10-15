@@ -4,8 +4,8 @@ Personal homepage built with Next.js, Chakra UI and Framer Motion,
 exported as a static site for GitHub Pages.
 
 Based on [Takuya Matsuyama's homepage](https://www.craftz.dog/)
-([source](https://github.com/craftzdog/craftzdog-homepage), MIT). As its license
-requires, the footer links back to the original. The 3D voxel scene is not used.
+([source](https://github.com/craftzdog/craftzdog-homepage)), used under the MIT
+license; its copyright notice is kept in `LICENSE`. The 3D voxel scene is not used.
 
 ## Edit content
 
