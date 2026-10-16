@@ -48,6 +48,9 @@ jobs:
         continue-on-error: true # a hub problem must never block the public site
         env:
           HUB_PASSWORD: ${{ secrets.HUB_PASSWORD }}
+          # optional owner copy (can move cards / set progress); both must be set to enable it
+          HUB_OWNER_PASSWORD: ${{ secrets.HUB_OWNER_PASSWORD }}
+          HUB_OWNER_TOKEN: ${{ secrets.HUB_OWNER_TOKEN }}
         run: |
           pip install --quiet pyyaml cryptography
           python _projects/app/export_hub.py --out out/hub/index.html
