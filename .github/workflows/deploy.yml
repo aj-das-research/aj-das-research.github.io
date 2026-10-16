@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *' # hourly, so the private research hub picks up changes in Projects
 
 permissions:
   contents: read
@@ -17,6 +19,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      HAS_HUB_PASSWORD: ${{ secrets.HUB_PASSWORD != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -29,6 +33,24 @@ jobs:
         env:
           # Empty for <user>.github.io; "/<repo>" for a project page.
           NEXT_PUBLIC_BASE_PATH: ${{ github.event.repository.name != format('{0}.github.io', github.repository_owner) && format('/{0}', github.event.repository.name) || '' }}
+      # Private research hub: an encrypted, read-only copy of the dashboard in the private
+      # aj-das-research/Projects repo, served at /hub/. Skipped until HUB_PASSWORD is set.
+      - name: Check out private Projects repo
+        if: env.HAS_HUB_PASSWORD == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: aj-das-research/Projects
+          ssh-key: ${{ secrets.PROJECTS_DEPLOY_KEY }}
+          path: _projects
+          fetch-depth: 1
+      - name: Build encrypted research hub
+        if: env.HAS_HUB_PASSWORD == 'true'
+        env:
+          HUB_PASSWORD: ${{ secrets.HUB_PASSWORD }}
+        run: |
+          pip install --quiet pyyaml cryptography
+          python _projects/app/export_hub.py --out out/hub/index.html
+          rm -rf _projects
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
