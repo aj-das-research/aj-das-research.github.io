@@ -45,6 +45,7 @@ jobs:
           fetch-depth: 1
       - name: Build encrypted research hub
         if: env.HAS_HUB_PASSWORD == 'true'
+        continue-on-error: true # a hub problem must never block the public site
         env:
           HUB_PASSWORD: ${{ secrets.HUB_PASSWORD }}
         run: |
