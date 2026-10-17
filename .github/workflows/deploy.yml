@@ -48,8 +48,6 @@ jobs:
         continue-on-error: true # a hub problem must never block the public site
         env:
           HUB_PASSWORD: ${{ secrets.HUB_PASSWORD }}
-          # optional: fine-grained token limited to the Projects repo; turns on editing in the hub
-          HUB_TOKEN: ${{ secrets.HUB_TOKEN }}
         run: |
           pip install --quiet pyyaml cryptography
           python _projects/app/export_hub.py --out out/hub/index.html
