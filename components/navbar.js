@@ -17,6 +17,8 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import LangToggle from './lang-toggle'
+import { T } from '../lib/i18n'
 import { IoLogoGithub } from 'react-icons/io5'
 import site from '../lib/site'
 
@@ -79,10 +81,10 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/publications/" path={path}>
-            Publications
+            <T en="Publications" zh="论文" />
           </LinkItem>
           <LinkItem href="/works/" path={path}>
-            Projects
+            <T en="Projects" zh="研究项目" />
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -98,7 +100,8 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} align="right" whiteSpace="nowrap">
+          <LangToggle mr={2} verticalAlign="middle" />
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -111,13 +114,13 @@ const Navbar = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  About
+                  <T en="About" zh="关于" />
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/publications/">
-                  Publications
+                  <T en="Publications" zh="论文" />
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works/">
-                  Projects
+                  <T en="Projects" zh="研究项目" />
                 </MenuItem>
                 <MenuItem as={Link} href={site.links.github} target="_blank">
                   GitHub

@@ -23,7 +23,7 @@ const Main = ({ children, router }) => {
         <title>{`${site.name} - Homepage`}</title>
       </Head>
 
-      <NavBar path={router.asPath} />
+      <NavBar path={router.asPath.split(/[?#]/)[0]} />
 
       <Container maxW="container.md" pt={24}>
         {children}

@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 import Script from 'next/script'
 import { useEffect } from 'react'
+import { LangProvider } from '../lib/i18n'
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
@@ -23,25 +24,27 @@ function Website({ Component, pageProps, router }) {
   useGoatCounter(router)
   return (
     <Chakra>
-      <Script
-        data-goatcounter="https://abhijit21.goatcounter.com/count"
-        src="https://gc.zgo.at/count.js"
-        strategy="afterInteractive"
-      />
-      <Fonts />
-      <Layout router={router}>
-        <AnimatePresence
-          mode="wait"
-          initial={true}
-          onExitComplete={() => {
-            if (typeof window !== 'undefined') {
-              window.scrollTo({ top: 0 })
-            }
-          }}
-        >
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
-      </Layout>
+      <LangProvider>
+        <Script
+          data-goatcounter="https://abhijit21.goatcounter.com/count"
+          src="https://gc.zgo.at/count.js"
+          strategy="afterInteractive"
+        />
+        <Fonts />
+        <Layout router={router}>
+          <AnimatePresence
+            mode="wait"
+            initial={true}
+            onExitComplete={() => {
+              if (typeof window !== 'undefined') {
+                window.scrollTo({ top: 0 })
+              }
+            }}
+          >
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+        </Layout>
+      </LangProvider>
     </Chakra>
   )
 }
