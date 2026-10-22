@@ -4,3 +4,6 @@ dist
 .vercel
 .env
 out
+
+# Research hub is switched off: the hub's publish step cannot add this page while it is ignored.
+/public/research_hub/
