@@ -6,12 +6,15 @@ import {
   Link,
   HStack,
   Badge,
-  Divider
+  Divider,
+  List,
+  ListItem
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import P from '../components/paragraph'
+import { Meta } from '../components/work'
 import tools from '../lib/tools'
 import { T, useTr } from '../lib/i18n'
 
@@ -31,7 +34,21 @@ const Tool = ({ t, tr }) => (
       ))}
     </HStack>
     <P style={{ textIndent: 0 }}>{tr({ en: t.en, zh: t.zh })}</P>
-    <HStack spacing={3} mt={2} flexWrap="wrap" rowGap={1}>
+    <List ml={0} my={3} spacing={1} fontSize="sm">
+      <ListItem>
+        <Meta>
+          <T en="When to use" zh="适用场景" />
+        </Meta>
+        <span>{tr(t.use)}</span>
+      </ListItem>
+      <ListItem>
+        <Meta>
+          <T en="Who it's for" zh="适用人群" />
+        </Meta>
+        <span>{tr(t.who)}</span>
+      </ListItem>
+    </List>
+    <HStack spacing={3} flexWrap="wrap" rowGap={1}>
       {Object.entries(t.links || {})
         .filter(([, href]) => href)
         .map(([label, href]) => (
