@@ -2,11 +2,9 @@ import {
   Container,
   Heading,
   Box,
-  Text,
   Link,
   HStack,
   Badge,
-  Divider,
   List,
   ListItem
 } from '@chakra-ui/react'
@@ -66,16 +64,9 @@ const Tools = () => {
   return (
     <Layout title={tr({ en: 'Tools', zh: '工具' })}>
       <Container>
-        <Heading as="h3" fontSize={20} mb={2}>
+        <Heading as="h3" fontSize={20} mb={4}>
           <T en="Tools" zh="工具" />
         </Heading>
-        <Text fontSize="sm" mb={4}>
-          <T
-            en="Open-source software I build and maintain for research. Each tool has documentation and installs from GitHub or PyPI."
-            zh="我为研究开发并维护的开源软件。每个工具都配有文档，可从 GitHub 或 PyPI 安装。"
-          />
-        </Text>
-        <Divider mb={6} />
         {tools.map((t, i) => (
           <Section key={t.id} delay={0.1 * i}>
             <Tool t={t} tr={tr} />
