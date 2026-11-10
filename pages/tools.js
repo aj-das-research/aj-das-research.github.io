@@ -45,6 +45,14 @@ const Tool = ({ t, tr }) => (
         </Meta>
         <span>{tr(t.who)}</span>
       </ListItem>
+      {t.with && (
+        <ListItem>
+          <Meta>
+            <T en="Co-developed with" zh="合作开发" />
+          </Meta>
+          <span>{tr(t.with)}</span>
+        </ListItem>
+      )}
     </List>
     <HStack spacing={3} flexWrap="wrap" rowGap={1}>
       {Object.entries(t.links || {})
@@ -64,9 +72,6 @@ const Tools = () => {
   return (
     <Layout title={tr({ en: 'Tools', zh: '工具' })}>
       <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
-          <T en="Tools" zh="工具" />
-        </Heading>
         {tools.map((t, i) => (
           <Section key={t.id} delay={0.1 * i}>
             <Tool t={t} tr={tr} />
