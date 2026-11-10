@@ -86,6 +86,9 @@ const Navbar = props => {
           <LinkItem href="/works/" path={path}>
             <T en="Projects" zh="研究项目" />
           </LinkItem>
+          <LinkItem href="/tools/" path={path}>
+            <T en="Tools" zh="工具" />
+          </LinkItem>
           <LinkItem
             target="_blank"
             href={site.links.github}
@@ -121,6 +124,9 @@ const Navbar = props => {
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works/">
                   <T en="Projects" zh="研究项目" />
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/tools/">
+                  <T en="Tools" zh="工具" />
                 </MenuItem>
                 <MenuItem as={Link} href={site.links.github} target="_blank">
                   GitHub
